@@ -1,4 +1,4 @@
-package kz.home.ys.algo.longestCommonPalindrome;
+package kz.home.ys.algo.middle.longestCommonPalindrome;
 
 public class LongestCommonPalindromeDynamicProgramming {
 

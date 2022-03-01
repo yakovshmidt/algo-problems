@@ -1,0 +1,1 @@
+1. understand Manacher's Algorithm
