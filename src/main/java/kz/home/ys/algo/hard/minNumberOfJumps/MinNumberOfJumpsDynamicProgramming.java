@@ -2,7 +2,7 @@ package kz.home.ys.algo.hard.minNumberOfJumps;
 
 import java.util.Arrays;
 
-class MinNumberOfJumps {
+class MinNumberOfJumpsDynamicProgramming {
 
     // time - O(N^2)
     // space - O(N)
