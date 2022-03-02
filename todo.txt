@@ -1,1 +1,1 @@
-1. solve the longest palindrome substring by understand Manacher's Algorithm
+1. solve the longest palindrome substring via Manacher's Algorithm
