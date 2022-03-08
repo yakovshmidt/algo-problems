@@ -1,6 +1,5 @@
-package kz.home.ys.algo.middle.longestCommonPalindrome;
+package kz.home.ys.algo.medium.longestCommonPalindrome;
 
-import kz.home.ys.algo.middle.longestCommonPalindrome.LongestCommonPalindromeExpandAroundCenter;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package kz.home.ys.algo.middle.threeSum;
+package kz.home.ys.algo.medium.threeSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

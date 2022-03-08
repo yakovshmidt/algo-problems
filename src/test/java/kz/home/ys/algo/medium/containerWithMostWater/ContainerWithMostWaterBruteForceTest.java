@@ -1,4 +1,4 @@
-package kz.home.ys.algo.middle.containerWithMostWater;
+package kz.home.ys.algo.medium.containerWithMostWater;
 
 import org.junit.Test;
 

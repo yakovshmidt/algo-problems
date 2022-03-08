@@ -1,4 +1,4 @@
-package kz.home.ys.algo.middle.threeSum;
+package kz.home.ys.algo.medium.threeSum;
 
 import org.junit.Test;
 
