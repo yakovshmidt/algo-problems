@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class ThreeSumUsingInputArraySorting {
+class ThreeSumUsingTwoPointers {
 
     // time - O(Nlog(N)) + O(N^2) -> O(N^2)
     // space - O(N) - because sorting does take extra space

@@ -6,11 +6,11 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class FourSumUsingInputArraySortingTest {
+public class FourSumTwoPointersTest {
 
     @Test
     public void testFourSum() {
-        List<List<Integer>> fourSum = new FourSumUsingInputArraySorting().fourSum(new int[]{2, 2, 2, 2, 2}, 8);
+        List<List<Integer>> fourSum = new FourSumTwoPointers().fourSum(new int[]{2, 2, 2, 2, 2}, 8);
 
         assertEquals(1, fourSum.size());
         assertEquals(4, fourSum.get(0).size());

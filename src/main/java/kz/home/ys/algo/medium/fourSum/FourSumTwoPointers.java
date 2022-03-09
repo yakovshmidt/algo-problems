@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class FourSumUsingInputArraySorting {
+class FourSumTwoPointers {
 
     // time - O(N^3)
     // space - O(N) - because sorting does take extra space

@@ -2,7 +2,7 @@ package kz.home.ys.algo.medium.threeSumClosest;
 
 import java.util.Arrays;
 
-class ThreeSumClosestUsingInputArraySorting {
+class ThreeSumClosestTwoPointers {
 
     // time - O(Nlog(N)) + O(N^2) -> O(N^2)
     // space - O(N) - because sorting does take extra space
