@@ -19,6 +19,8 @@ class ListNode {
 
 class RemoveNthNodeFromEndOfList {
 
+    // time - O(N)
+    // space - O(1)
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null) return null;
 
