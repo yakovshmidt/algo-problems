@@ -1,1 +1,5 @@
 1. solve the longest palindrome substring via Manacher's Algorithm
+2. time and space complexities for recursive algorithms
+3. quick sort
+4. merge sort
+5.
