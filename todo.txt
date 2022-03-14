@@ -3,4 +3,5 @@
 3. quick sort
 4. merge sort
 5. dancing links technique
-6. generate parenthesis backtracking time and space complexities
+6. "generate parenthesis" time and space complexities
+7. repeat generate parenthesis using closure number

@@ -5,6 +5,8 @@ import java.util.List;
 
 class GenerateParenthesisBruteForce {
 
+    // time - ???
+    // space - ???
     public List<String> generateParenthesis(int n) {
         List<String> balancedParenthesis = new ArrayList<>();
         generateAllCombinationsOfParenthesis(balancedParenthesis, new char[n * 2], 0);
