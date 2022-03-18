@@ -1,6 +1,5 @@
 package kz.home.ys.algo.hard.laptopRental;
 
-import junit.framework.TestCase;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -8,7 +7,7 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
-public class LaptopRentalMinHeapTest {
+public class LaptopRentalIteratorTest {
 
     @Test
     public void testLaptopRentals() {
@@ -19,7 +18,7 @@ public class LaptopRentalMinHeapTest {
         }
         int expected = 3;
 
-        int actual = new LaptopRentalMinHeap().laptopRentals(input);
+        int actual = new LaptopRentalIterator().laptopRentals(input);
 
         assertEquals(expected, actual);
     }
