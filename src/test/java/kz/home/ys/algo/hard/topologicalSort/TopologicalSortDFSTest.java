@@ -8,7 +8,7 @@ import static kz.home.ys.algo.hard.topologicalSort.TopologicalSortUtils.fillDeps
 import static kz.home.ys.algo.hard.topologicalSort.TopologicalSortUtils.isValidTopologicalOrder;
 import static org.junit.Assert.assertTrue;
 
-public class TopologicalSortTest {
+public class TopologicalSortDFSTest {
 
     @Test
     public void testTopologicalSort() {
@@ -17,7 +17,7 @@ public class TopologicalSortTest {
         List<Integer[]> deps = new ArrayList<>();
         fillDeps(depsArray, deps);
 
-        List<Integer> order = new TopologicalSort().topologicalSort(jobs, deps);
+        List<Integer> order = new TopologicalSortDFS().topologicalSort(jobs, deps);
 
         assertTrue(isValidTopologicalOrder(order, jobs, deps));
     }
