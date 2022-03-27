@@ -3,9 +3,8 @@ package kz.home.ys.algo.medium.validateBinarySearchTree;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
-public class ValidateBinarySearchRecursiveTreeTest {
+public class ValidateBinarySearchTreeTest {
 
     @Test
     public void testIsValidBST() {
