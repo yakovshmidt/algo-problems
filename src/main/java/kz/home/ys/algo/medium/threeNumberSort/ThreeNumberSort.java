@@ -6,13 +6,13 @@ public class ThreeNumberSort {
     // space - O(1)
     public int[] threeNumberSort(int[] array, int[] order) {
         int[] counts = getCounts(array, order);
-        int[] startIndices = new int[] {0, counts[1], counts[0] + counts[1]};
+        int[] startIndices = new int[] {0, counts[0], counts[0] + counts[1]};
 
         for (int i = 0; i < 3; i++) {
             int count = counts[i];
             int idx = startIndices[i];
 
-            while (count > 0) {
+            while (count != 0) {
                 array[idx] = order[i];
                 idx++;
                 count--;
