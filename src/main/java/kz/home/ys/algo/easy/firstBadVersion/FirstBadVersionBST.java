@@ -8,7 +8,9 @@ class VersionControl {
 }
 
 public class FirstBadVersionBST extends VersionControl {
-   
+
+    // time - O(log(N))
+    // space - O(1)
     public int firstBadVersion(int n) {
         return searchBadVersionViaBST(0, n);
     }
