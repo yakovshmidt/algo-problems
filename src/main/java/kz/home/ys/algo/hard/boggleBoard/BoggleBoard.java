@@ -4,7 +4,10 @@ import java.util.*;
 
 class BoggleBoard {
 
-    // time - O(W * S + R * C * 8^S) - where W is number of words, S is the length of the longest one, R is length of row, C is length of column, and S is number of recursive calls for each letter
+    // time - O(W * S + R * C * 8^S) - where W is number of words,
+    // S is the length of the longest one,
+    // R is length of row, C is length of column,
+    // and S is number of recursive calls for each letter
     // space - (W * S + R * C)
     public List<String> boggleBoard(char[][] board, String[] words) {
         Trie trie = new Trie();
