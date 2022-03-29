@@ -5,68 +5,41 @@ import java.util.*;
 class BoggleBoard {
 
     public List<String> boggleBoard(char[][] board, String[] words) {
-        Map<Character, List<String>> firstLetterToWords = mapWords(words);
-        Set<String> foundWords = new HashSet<>();
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[row].length; col++) {
-                char currLetter = board[row][col];
-                if (firstLetterToWords.containsKey(currLetter)) {
-                    List<String> sortedWordsByFirstLetter = firstLetterToWords.get(currLetter);
-                    for (String word : sortedWordsByFirstLetter) {
-                        boolean[][] visited = new boolean[board.length][board[0].length];
-                        addWordIfFound(board, row, col, word, 0, "", foundWords, visited);
-                    }
-                }
-            }
-        }
-
-        return new ArrayList<>(foundWords);
-    }
-
-    private Map<Character, List<String>> mapWords(String[] words) {
-        Map<Character, List<String>> firstLetterToWords = new HashMap<>();
+        Trie trie = new Trie();
         for (String word : words) {
-            char firstLetter = word.charAt(0);
-            if (firstLetterToWords.containsKey(firstLetter)) {
-                firstLetterToWords.get(firstLetter).add(word);
-            } else {
-                List<String> currWords = new ArrayList<>();
-                currWords.add(word);
-                firstLetterToWords.put(firstLetter, currWords);
+            trie.add(word);
+        }
+
+        List<String> foundWords = new ArrayList<>();
+
+        boolean[][] visited = new boolean[board.length][board[0].length];
+        for (int row = 0; row < board.length; row++) {
+            for (int column = 0; column < board[row].length; column++) {
+                explore(board, row, column, trie.root, foundWords, visited);
             }
         }
-        return firstLetterToWords;
+
+        return foundWords;
     }
 
-    private void addWordIfFound(char[][] board,
-                                int row,
-                                int column,
-                                String word,
-                                int currIdx,
-                                String prefix,
-                                Set<String> foundWords,
-                                boolean[][] visited) {
-        if (prefix.equals("NOTRE-PEAT")) {
-            System.out.println("hi");
-        }
-
-        if (word.equals(prefix)) {
-            foundWords.add(word);
-            return;
-        }
-        if (currIdx >= word.length()) return;
+    private void explore(char[][] board, int row, int column, TrieNode node, List<String> foundWords, boolean[][] visited) {
         if (visited[row][column]) return;
 
-        char wordLetter = word.charAt(currIdx);
-        if (wordLetter == board[row][column]) {
-            int nextIdx = currIdx + 1;
-            String nextPrefix = prefix + wordLetter;
-            List<Integer[]> neighbors = getNeighbors(row, column, board);
-            visited[row][column] = true;
-            for (Integer[] neighbor : neighbors) {
-                addWordIfFound(board, neighbor[0], neighbor[1], word, nextIdx, nextPrefix, foundWords, visited);
-            }
+        char letter = board[row][column];
+
+        if (!node.children.containsKey(letter)) return;
+        visited[row][column] = true;
+
+        node = node.children.get(letter);
+        if (node.children.containsKey('*') && !foundWords.contains(node.word)) {
+            foundWords.add(node.word);
         }
+
+        List<Integer[]> neighbors = getNeighbors(row, column, board);
+        for (Integer[] neighbor : neighbors) {
+            explore(board, neighbor[0], neighbor[1], node, foundWords, visited);
+        }
+        visited[row][column] = false;
     }
 
     private List<Integer[]> getNeighbors(int row, int col, char[][] board) {
@@ -97,5 +70,33 @@ class BoggleBoard {
         }
         return neighbors;
     }
-}
 
+    static class TrieNode {
+        Map<Character, TrieNode> children = new HashMap<>();
+        String word = "";
+    }
+
+    static class Trie {
+        TrieNode root;
+        char endSymbol;
+
+        public Trie() {
+            this.root = new TrieNode();
+            this.endSymbol = '*';
+        }
+
+        public void add(String str) {
+            TrieNode node = this.root;
+            for (int i = 0; i < str.length(); i++) {
+                char letter = str.charAt(i);
+                if (!node.children.containsKey(letter)) {
+                    TrieNode newNode = new TrieNode();
+                    node.children.put(letter, newNode);
+                }
+                node = node.children.get(letter);
+            }
+            node.children.put(this.endSymbol, null);
+            node.word = str;
+        }
+    }
+}

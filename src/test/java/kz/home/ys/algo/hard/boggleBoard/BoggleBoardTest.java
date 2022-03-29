@@ -27,7 +27,7 @@ public class BoggleBoardTest {
 
         List<String> actual = new BoggleBoard().boggleBoard(board, words);
 
-        assertEquals(actual.size(), expected.length);
+        assertEquals(expected.length, actual.size());
         for (String word : actual) {
             assertTrue(contains(expected, word));
         }
