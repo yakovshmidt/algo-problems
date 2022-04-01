@@ -12,13 +12,4 @@ class ReverseLinkedListUsingRecursion {
         head.next = null;
         return rest;
     }
-
-    static class LinkedList {
-        int value;
-        LinkedList next = null;
-
-        public LinkedList(int value) {
-            this.value = value;
-        }
-    }
 }
