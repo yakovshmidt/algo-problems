@@ -7,3 +7,4 @@
 7. repeat generate parenthesis using closure number
 8. repeat Kadane's algorithm
 9. repeat Trie data structure
+10. repeat Max Heap and Min Heap data structure
