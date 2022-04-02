@@ -1,5 +1,7 @@
 package kz.home.ys.algo.hard.reverseLinkedList;
 
+import java.util.HashMap;
+
 class ReverseLinkedListUsingIterator {
 
     // time - O(N) - where N is number of nodes
