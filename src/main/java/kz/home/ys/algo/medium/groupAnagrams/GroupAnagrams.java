@@ -8,7 +8,7 @@ class GroupAnagrams {
     // space - O(N + M) = where M is number of created array lists in the worst case if we don't have anagrams, just unique words
     public List<List<String>> groupAnagrams(String[] strs) {
         if (strs == null || strs.length == 0) return new ArrayList<>();
-        
+
         Map<String, List<String>> sortedWordToAnagrams = new HashMap<>();
         for (String word : strs) {
             char[] wordAsArray = word.toCharArray();
@@ -22,11 +22,7 @@ class GroupAnagrams {
                 sortedWordToAnagrams.put(sortedWord, anagrams);
             }
         }
-        List<List<String>> anagrams = new ArrayList<>();
-        for (Map.Entry<String, List<String>> entry: sortedWordToAnagrams.entrySet()) {
-            anagrams.add(entry.getValue());
-        }
-        
-        return anagrams;
+
+        return new ArrayList<>(sortedWordToAnagrams.values());
     }
 }
