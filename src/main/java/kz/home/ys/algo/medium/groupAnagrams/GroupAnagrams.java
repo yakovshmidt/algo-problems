@@ -5,7 +5,7 @@ import java.util.*;
 class GroupAnagrams {
 
     // time - O(N) - where N is length of strs
-    // space - O(N + M) = where M is number of created array lists in the worst case if we don't have anagrams, just unique words
+    // space - O(N * M*Log(M)) = where M is length of longest word
     public List<List<String>> groupAnagrams(String[] strs) {
         if (strs == null || strs.length == 0) return new ArrayList<>();
 
