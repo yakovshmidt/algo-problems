@@ -5,13 +5,13 @@ import org.junit.Test;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNull;
 
-public class RemoveDuplicatesFromLinkedListTest {
+public class RemoveDuplicatesFromSortedListTest {
 
     @Test
     public void testDeleteDuplicates() {
         ListNode expected = new ListNode(1, new ListNode(2));
 
-        ListNode actual = new RemoveDuplicatesFromLinkedList().deleteDuplicates(
+        ListNode actual = new RemoveDuplicatesFromSortedList().deleteDuplicates(
                 new ListNode(
                         1,
                         new ListNode(

@@ -1,6 +1,6 @@
 package kz.home.ys.algo.easy.removeDuplicatesFromLinkedList;
 
-class RemoveDuplicatesFromLinkedList {
+class RemoveDuplicatesFromSortedList {
 
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) return null;
