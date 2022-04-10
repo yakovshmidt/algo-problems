@@ -7,3 +7,5 @@ https://www.youtube.com/watch?v=pVfj6mxhdMw
 https://www.geeksforgeeks.org/topological-sorting/
 
 ### Min Heap algorithm?
+
+https://www.journaldev.com/36805/min-heap-binary-tree
