@@ -8,7 +8,7 @@ import java.util.List;
 class MergeIntervals {
 
     // time - O(N*log(N) * N) -> O(N*log(N))
-    // space - O(1)
+    // space - O(log(N)) - sorting algo takes the space
     public int[][] merge(int[][] intervals) {
         if (intervals.length == 1) return intervals;
         
