@@ -1,3 +1,5 @@
+[Amazon preparation process](https://www.amazon.jobs/en/software-development-interview-prep?cmpid=ECOTOT700005B#/)
+
 # Algo
 * [Grokking Bit Manipulation for Coding Interviews](https://www.educative.io/courses/bit-manipulation)
 * [75 curated questions to prepare the interview](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
@@ -11,14 +13,14 @@
 * Course on Citi's Udemy
 * How to solve SD step by step
 * Theory Topics:
-  * [Proxies](./systemDesign/Proxies.md)
-  * [Load Balancing](./systemDesign/LoadBalancing.md)
-  * Caching
+  * [Proxies](./systemDesign/Proxies.md) +
+  * [Load Balancing](./systemDesign/LoadBalancing.md) +
+  * Caching +
   * Replication and Redundancy
-  * Sharding and ?
+  * Sharding and Partitioning
   * SQL vs NoSQL
   * HTTP vs SOAP
-  * HTTP vs REST
+  * HTTP vs REST +
   * CAP Theorem
   * Consistent Hashing
   * Long Polling vs WebServers vs Server-Sent Events
@@ -61,5 +63,5 @@ Notes:
 # English
 * [learnship](https://edge.learnship.com) speaking club once a week 
 * [learnship](https://edge.learnship.com) assignments every day
-* Pass TOEIC® Test
+* Pass TOEIC® Test ??
 * Business Situations - Participating in Meetings
