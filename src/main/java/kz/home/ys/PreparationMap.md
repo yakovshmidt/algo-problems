@@ -1,13 +1,10 @@
 [Amazon preparation process](https://www.amazon.jobs/en/software-development-interview-prep?cmpid=ECOTOT700005B#/)
 
 # Algo
+* B-Tree vs B-Tree+ vs Binary Tree
+* Kadane's algo
 * [Grokking Bit Manipulation for Coding Interviews](https://www.educative.io/courses/bit-manipulation)
 * [75 curated questions to prepare the interview](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
-    * Solutions
-      * Binary
-        * [Sum of Two Integers](./algo/medium/sumOfTwoIntegers/SumOfTwoIntegers.java)
-        * [Number of 1 Bits](./algo/easy/numberOf1Bits/NumberOf1BitsBitManipulation.java)
-        * [Counting Bits](./algo/easy/countingBits/CountingBits.java)
 
 # Sys Design
 * Course on Citi's Udemy
@@ -19,13 +16,15 @@
   * Replication and Redundancy
   * Sharding and Partitioning
   * SQL vs NoSQL
-  * HTTP vs SOAP
+  * HTTP (REST) vs SOAP +
   * HTTP vs REST +
-  * CAP Theorem
-  * Consistent Hashing
+  * CAP Theorem +
+  * Consistent Hashing +
   * Long Polling vs WebServers vs Server-Sent Events
   * WebSockets
   * Reliability vs Availability
+  * Databases, Optimistic vs Pessimistic Locks, ACID, Transaction Isolation Levels +
+  * Distributed Locks
 * Practice
   * Design Short url
   * Design Uber
@@ -59,9 +58,11 @@ Notes:
 * Get topics from AlgoExpert?
 
 # Java Interview Questions
+* ACID +
+* Isolation Levels +
+* Pessimistic vs Optimistic Lock 
 
 # English
 * [learnship](https://edge.learnship.com) speaking club once a week 
 * [learnship](https://edge.learnship.com) assignments every day
-* Pass TOEIC® Test ??
 * Business Situations - Participating in Meetings

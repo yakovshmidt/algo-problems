@@ -1,6 +1,5 @@
 package kz.home.ys.algo.easy.mergeTwoSortedLists;
 
-
 import kz.home.ys.algo.easy.mergeTwoSortedLists.util.ListNode;
 
 public class MergeTwoSortedListsRecursive {
