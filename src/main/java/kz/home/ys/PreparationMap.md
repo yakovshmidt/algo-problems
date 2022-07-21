@@ -16,6 +16,7 @@
   * Replication and Redundancy
   * Sharding and Partitioning
   * SQL vs NoSQL
+  * DB Indexes
   * HTTP (REST) vs SOAP +
   * HTTP vs REST +
   * CAP Theorem +

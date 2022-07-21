@@ -1,11 +1,9 @@
 package kz.home.ys.algo.medium.numberOfIslands;
 
-import java.util.Stack;
-
 class NumberOfIslands {
 
     // time - O(N * M)
-    // space - O(1)
+    // space - O(N * M)
     public int numIslands(char[][] grid) {
         boolean[][] visited = new boolean[grid.length][grid[0].length];
 
@@ -25,9 +23,9 @@ class NumberOfIslands {
         if (i < 0 || j < 0 || i >= m || j >= n || visited[i][j] || grid[i][j] == '0') return;
         visited[i][j] = true;
 
-        dfs(i - 1, j, m, n, visited,grid);
-        dfs(i, j - 1, m, n, visited,grid);
-        dfs(i + 1, j, m, n, visited,grid);
-        dfs(i, j + 1, m, n, visited,grid);
+        dfs(i - 1, j, m, n, visited, grid);
+        dfs(i, j - 1, m, n, visited, grid);
+        dfs(i + 1, j, m, n, visited, grid);
+        dfs(i, j + 1, m, n, visited, grid);
     }
 }
