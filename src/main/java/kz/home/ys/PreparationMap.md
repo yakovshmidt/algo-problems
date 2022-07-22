@@ -7,25 +7,40 @@
 * [75 curated questions to prepare the interview](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
 
 # Sys Design
-* Course on Citi's Udemy
+* Course on Citi's Udemy - Pragmatic System Design Interview
+* [Grokking System Design Interview](./systemDesign/grokkingSystemDesignInterview)
 * How to solve SD step by step
 * Theory Topics:
+  * Step-by-step guide
+    * [Estimation practice tutorial_1](https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477)
+    * [Estimation practice tutorial_2](https://www.codementor.io/@robinpalotai/back-of-the-envelope-calculation-for-system-design-interviews-z4ljbsp5l)
   * [Proxies](./systemDesign/Proxies.md) +
   * [Load Balancing](./systemDesign/LoadBalancing.md) +
   * Caching +
+  * CDN
   * Replication and Redundancy
   * Sharding and Partitioning
-  * SQL vs NoSQL
+  * [SQL vs NoSQL](https://www.nodeflair.com/blog/sql-vs-nosql-databases-system-design-interview)
+  * ACID vs BASE
   * DB Indexes
   * HTTP (REST) vs SOAP +
   * HTTP vs REST +
   * CAP Theorem +
+  * PACELC Theorem
+  * How to measure availability (Nines)
   * Consistent Hashing +
   * Long Polling vs WebServers vs Server-Sent Events
+  * Bloom Filters
+  * Quorum
+  * Leader and Follower
+  * Heartbeat
+  * Checksum
   * WebSockets
   * Reliability vs Availability
   * Databases, Optimistic vs Pessimistic Locks, ACID, Transaction Isolation Levels +
   * Distributed Locks
+  * Api Gateway
+  * Concurrency vs Parallel
 * Practice
   * Design Short url
   * Design Uber
