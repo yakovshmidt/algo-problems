@@ -19,23 +19,23 @@
   * Caching +
   * CDN
   * Replication and Redundancy
-  * Sharding and Partitioning
+  * Quorum of followers (Consensus algorithm)
+  * Sharding and Partitioning + 
   * [SQL vs NoSQL](https://www.nodeflair.com/blog/sql-vs-nosql-databases-system-design-interview)
-  * ACID vs BASE
-  * DB Indexes
+  * ACID vs BASE +
+  * DB Indexes +
   * HTTP (REST) vs SOAP +
   * HTTP vs REST +
   * CAP Theorem +
-  * PACELC Theorem
+  * PACELC Theorem +
   * How to measure availability (Nines)
   * Consistent Hashing +
   * Long Polling vs WebServers vs Server-Sent Events
   * Bloom Filters
-  * Quorum
   * Leader and Follower
   * Heartbeat
   * Checksum
-  * WebSockets
+  * WebSockets +
   * Reliability vs Availability
   * Databases, Optimistic vs Pessimistic Locks, ACID, Transaction Isolation Levels +
   * Distributed Locks
