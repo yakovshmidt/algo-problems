@@ -2,6 +2,8 @@ package kz.home.ys.algo.easy.subtreeOfAnotherTree;
 
 public class SubtreeOfAnotherTree {
 
+    // time - O(N) - where N is number of nodes of root tree
+    // space - O(N) - because of recursion
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
         if (root == null || subRoot == null) {
             return root == null && subRoot == null;
