@@ -12,11 +12,13 @@
   * [Proxies](./systemDesign/Proxies.md) +
   * [Load Balancing](./systemDesign/LoadBalancing.md) +
   * Caching +
+    * Google Guava as a local cache
   * [CDN](https://blog.tryexponent.com/cdns-content-delivery-networks/)
   * Replication and Redundancy +
   * Quorum of followers (Consensus algorithm)
   * Sharding and Partitioning + 
   * [SQL vs NoSQL](https://www.nodeflair.com/blog/sql-vs-nosql-databases-system-design-interview)
+    * Cassandra. For what?
   * ACID vs BASE +
   * DB Indexes +
   * Gossip protocol
@@ -39,6 +41,7 @@
   * Api Gateway
   * Concurrency vs Parallel
 * Practice
+  * Design Notification Service
   * Design Short url +
   * Design Uber
   * Design Google Docs

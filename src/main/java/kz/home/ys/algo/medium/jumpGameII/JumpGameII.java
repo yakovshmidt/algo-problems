@@ -11,11 +11,11 @@ class JumpGameII {
         
         while (r < nums.length - 1) {
             int farthest = 0;
-            for (int i = l; i <= r; i++) {  // 0 0, 1 3, 4,5
+            for (int i = l; i <= r; i++) {
                 farthest = Math.max(farthest, i + nums[i]);
             }
-            l = r + 1;  // 1, 4,
-            r = farthest; // 3, 5
+            l = r + 1;
+            r = farthest;
             res++;
         }
         
