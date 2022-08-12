@@ -13,15 +13,24 @@
   * [Load Balancing](./systemDesign/LoadBalancing.md) +
   * Caching +
     * Google Guava as a local cache
+    * Redis
   * [CDN](https://blog.tryexponent.com/cdns-content-delivery-networks/)
+  * [SQL vs NoSQL](https://www.nodeflair.com/blog/sql-vs-nosql-databases-system-design-interview)
+    * Cassandra
+    * Amazon Dynamo DB
   * Replication and Redundancy +
   * Quorum of followers (Consensus algorithm)
-  * Sharding and Partitioning + 
-  * [SQL vs NoSQL](https://www.nodeflair.com/blog/sql-vs-nosql-databases-system-design-interview)
-    * Cassandra. For what?
+  * Sharding and Partitioning +
   * ACID vs BASE +
   * DB Indexes +
   * Gossip protocol
+  * Queues
+    * Kafka
+    * Apache SQS
+  * Streams
+    * Kafka
+    * Amazon Kenesis
+  * Security
   * HTTP (REST) vs SOAP +
   * HTTP vs REST +
   * CAP Theorem +
@@ -41,7 +50,7 @@
   * Api Gateway
   * Concurrency vs Parallel
 * Practice
-  * Design Notification Service
+  * Design Notification Service +-
   * Design Short url +
   * Design Uber
   * Design Google Docs
