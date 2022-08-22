@@ -16,3 +16,12 @@
 
 Notes:
 * Get topics from AlgoExpert?
+
+
+Q&A:
+
+**Q**:Tell me about yourself?
+**A**: 
+
+**Q**:Tell me about a time when you had to persuade someone at work. What did you do?
+**A**:  
