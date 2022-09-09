@@ -14,6 +14,20 @@
   * Q: **Strengths And Improvements** - What aspects of software engineering do you think you're very good at? What about areas where you'd like to improve? How do you plan on improving?
   * Q: **Comfort Zone** - Describe a time when you went out of your comfort zone. Why did you do it? What lessons did you learn from the experience?
 
+https://leetcode.com/explore/interview/card/coding-interview-strategy/206/chapter-1-the-interview-process/1243/
+* Tell me your biggest weakness as an engineer.
+* Describe a tricky bug you’ve encountered.
+* What’s the biggest project you’ve shipped?
+* What’s your favorite programming language? Why?
+* How do you overcome interpersonal conflicts with coworkers?
+* example of an interesting technical problem you solved
+* example of an interpersonal conflict you overcame
+* example of leadership or ownership
+* story about what you should have done differently in a past project
+* piece of trivia about your favorite language, and something you do and don't like about said language
+* question about the company's product/business
+* question about the company's engineering strategy (testing, Scrum, etc)
+
 Notes:
 * Get topics from AlgoExpert?
 

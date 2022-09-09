@@ -4,17 +4,18 @@
 * Courses:
   * [Grokking the Advanced System Design Interview](https://www.educative.io/courses/grokking-adv-system-design-intvw) ?
   * Course on Citi's Udemy - Pragmatic System Design Interview
-  * [Grokking System Design Interview](./systemDesign/grokkingSystemDesignInterview)
+  * [Grokking System Design Interview](systemDesign/grokkingSystemDesignInterview)
 * Theory Topics:
   * Step-by-step guide +
-    * [Estimation practice tutorial_1](https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477)
-    * [Estimation practice tutorial_2](https://www.codementor.io/@robinpalotai/back-of-the-envelope-calculation-for-system-design-interviews-z4ljbsp5l)
-  * [Proxies](./systemDesign/Proxies.md) +
-  * [Load Balancing](./systemDesign/LoadBalancing.md) +
+    * +[Estimation practice tutorial_1](https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477)
+    * +[Estimation practice tutorial_2](https://www.codementor.io/@robinpalotai/back-of-the-envelope-calculation-for-system-design-interviews-z4ljbsp5l)
+  * [Proxies](systemDesign/Proxies.md) +
+  * [Load Balancing](systemDesign/LoadBalancing.md) +
   * Caching +
     * Google Guava as a local cache
     * Redis
   * [CDN](https://blog.tryexponent.com/cdns-content-delivery-networks/)
+    * Amazon CloudFront
   * [SQL vs NoSQL](https://www.nodeflair.com/blog/sql-vs-nosql-databases-system-design-interview)
     * Cassandra
     * Amazon Dynamo DB
@@ -46,10 +47,16 @@
   * How to measure availability (Nines)
   * DNS
   * Databases, Optimistic vs Pessimistic Locks, ACID, Transaction Isolation Levels +
+    * Databases:
+      * SQL
+      * NoSQL
+      * Object Storage:
+        * Amazon S3
   * Distributed Locks
   * Api Gateway
   * Concurrency vs Parallel
 * Practice
+  * Design TikTok
   * Design Notification Service +-
   * Design Short url +
   * Design Uber
@@ -62,23 +69,15 @@
 Notes:
 * Get topics from AlgoExpert?
 
-# Java Interview Questions
-* ACID +
-* Isolation Levels +
-* Pessimistic vs Optimistic Lock 
-
-# English
-* [learnship](https://edge.learnship.com) speaking club once a week 
-* [learnship](https://edge.learnship.com) assignments every day
-* Business Situations - Participating in Meetings
-
-TODOs: 
-* Solve the problems again:
-  * longest common palindrome using DP
-  * https://leetcode.com/problems/maximum-product-subarray/
-  * https://leetcode.com/problems/product-of-array-except-self/
-
 Notes:
 * server can process 5K inserts per **shard**
 * server can process 10K gets per **replica**
 * modern day server can have 256GB memory of RAM to store **cache**
+* One million transactions **per day** is:
+  * ~42k per hour
+  * ~700 per minute
+  * ~12 per second
+* to store files, videos, images, logs, analytics data we need to use **object storage** like:
+  * Amazon S3 
+* to store metadata we need to use key-value storage or column-oriented storage
+  * mongoDB

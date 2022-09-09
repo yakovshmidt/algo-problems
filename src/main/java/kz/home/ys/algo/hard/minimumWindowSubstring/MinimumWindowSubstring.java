@@ -1,50 +1,48 @@
 package kz.home.ys.algo.hard.minimumWindowSubstring;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 class MinimumWindowSubstring {
 
-
     public String minWindow(String s, String t) {
-        Map<Character, Integer> lettersToCounts = new HashMap<>();
+        Map<Character, Integer> dictT = new HashMap<>();
         for (char letter : t.toCharArray()) {
-            lettersToCounts.put(letter, lettersToCounts.getOrDefault(letter, 0) + 1);
+            dictT.put(letter, dictT.getOrDefault(letter, 0) + 1);
         }
 
-        String result = "";
-        int l = 0;
-        for (int r = 0; r < s.length(); r++) {
-            if (lettersToCounts.containsKey(s.charAt(r))) {
-                lettersToCounts.put(s.charAt(r), lettersToCounts.get(s.charAt(r)) - 1);
+        int required = t.length();
+        int l = 0, r = 0;
+        int formed = 0;
+        Map<Character, Integer> windowCount = new HashMap<>();
+        int[] ans = {-1, 0, 0};
+        while (r < s.length()) {
+            char c = s.charAt(r);
+            windowCount.put(c, windowCount.getOrDefault(c, 0) + 1);
+
+            if (dictT.containsKey(c) && windowCount.get(c).equals(dictT.get(c))) {
+                formed++;
             }
 
-            if (allLettersAreFound(lettersToCounts)) {
-                String subS = s.substring(l, r + 1);
-
-                if (result.equals("") || result.length() > subS.length()) result = subS;
-
-                while (allLettersAreFound(lettersToCounts)) {
-                    if (lettersToCounts.containsKey(s.charAt(l))) {
-                        lettersToCounts.put(s.charAt(l), lettersToCounts.get(s.charAt(l)) + 1);
-                    }
-                    l++;
+            while (l <= r && formed == required) {
+                c = s.charAt(l);
+                if (ans[0] == -1 || ans[0] > r - l + 1) {
+                    ans[0] = r - l + 1;
+                    ans[1] = l;
+                    ans[2] = r;
                 }
-                while (!lettersToCounts.containsKey(s.charAt(l))) {
-                    l++;
+
+                windowCount.put(c, windowCount.get(c) - 1);
+                if (dictT.containsKey(c) && windowCount.get(c) < dictT.get(c)) {
+                    formed--;
                 }
+
+                l++;
             }
+
+            r++;
         }
 
-        return result;
-    }
-
-    private boolean allLettersAreFound(Map<Character, Integer> lettersToCounts) {
-        Collection<Integer> counts = lettersToCounts.values();
-        for (int count : lettersToCounts.values()) {
-            if (count != 0) return false;
-        }
-        return true;
+        return s.substring(ans[1], ans[2] + 1);
     }
 }
