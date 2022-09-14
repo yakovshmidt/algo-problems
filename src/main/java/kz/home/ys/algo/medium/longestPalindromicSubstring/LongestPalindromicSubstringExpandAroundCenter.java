@@ -1,6 +1,6 @@
 package kz.home.ys.algo.medium.longestPalindromicSubstring;
 
-class LongestPalindromicSubstring {
+class LongestPalindromicSubstringExpandAroundCenter {
 
     // time - O(N^2)
     // space - O(1)

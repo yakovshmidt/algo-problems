@@ -16,6 +16,7 @@
     * Redis
   * [CDN](https://blog.tryexponent.com/cdns-content-delivery-networks/)
     * Amazon CloudFront
+    * 
   * [SQL vs NoSQL](https://www.nodeflair.com/blog/sql-vs-nosql-databases-system-design-interview)
     * Cassandra
     * Amazon Dynamo DB
@@ -57,6 +58,7 @@
   * Concurrency vs Parallel
 * Practice
   * Design TikTok
+    * https://www.youtube.com/watch?v=07BVxmVFDGY
   * Design Notification Service +-
   * Design Short url +
   * Design Uber

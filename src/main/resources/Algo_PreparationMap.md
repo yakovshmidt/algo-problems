@@ -9,6 +9,9 @@
 * Time and space complexities of all famous algorithms
 * [Grokking Bit Manipulation for Coding Interviews](https://www.educative.io/courses/bit-manipulation)
 * [75 curated questions to prepare the interview](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
+* Repeat presentation of character english letters to integers
+* https://leetcode.com/explore/interview/card/coding-interview-strategy/206/chapter-1-the-interview-process/
+
 
 | Week № | Question                                                                                               | date       | comment             | resolved |
 |--------|--------------------------------------------------------------------------------------------------------|------------|---------------------|---------|
@@ -19,3 +22,4 @@
 | 1      | [design-add-and-search-words-data-structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | 24.08.2022 | trie/backtracking   | false    |
 | 1      | [missing-number](https://leetcode.com/problems/missing-number/) | 06.09.2022 | bit manipulation    | false    |
 | 1      | [next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/) | 09.09.2022 | stack/map           | false    |
+| 1      | [binary-tree-maximum-path-sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | 13.09.2022 | dfs                 | false    |

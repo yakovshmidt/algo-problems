@@ -12,7 +12,7 @@ class NextGreaterElementIBruteForce {
         for (int i = 0; i < nums2.length; i++) {
             numsToIndices.put(nums2[i], i);
         }
-        
+
         int[] result = new int[nums1.length];
         for (int i = 0; i < nums1.length; i++) {
             int num1 = nums1[i];
@@ -28,7 +28,7 @@ class NextGreaterElementIBruteForce {
             }
             result[i] = nextGreaterElement;
         }
-        
+
         return result;
     }
 }
