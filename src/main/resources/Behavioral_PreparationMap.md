@@ -28,6 +28,26 @@ https://leetcode.com/explore/interview/card/coding-interview-strategy/206/chapte
 * question about the company's product/business
 * question about the company's engineering strategy (testing, Scrum, etc)
 
+https://www.educative.io/courses/grokking-the-behavioral-interview/
+
+* Times when you felt a huge sense of accomplishment or success.
+* Times when you fixed something that wasn’t working.
+* A time when you had to make a challenging decision.
+* A time when you had to influence a leader or team.
+* Times when you got surprised by something or had overlooked something.
+* Times when you removed barriers or came up with a creative solution.
+* A time when you failed but learned.
+* A time when you had to defuse​ an escalating situation.
+
+##STAR
+* Situation. Describe a specific situation. You need to give enough information that the interviewer will be able to understand the circumstances.
+
+* Task. What were you asked or expected to do and why? What was driving you (and/or your team) to complete this project or solve this problem? What were your responsibilities in that situation?
+
+* Action. Describe the actions taken. You should prioritize what you did, what your contribution was, and how those things were impactful. Focus on “I," not “we”.
+
+* Result. Describe the outcome. DO NOT undercut your role in the situation, this is not the time to be modest. When talking about the result, make sure you go over what happened, how the event ended, what was accomplished, and what you learned. Be positive. Even if the outcome was unsatisfactory, it is important that something positive came from it. Remember, even when things are negative (or not what you had hoped) good things can still come from them. Oftentimes, individuals have to be prompted in this section of their answer; stand out by including this part on your own.
+
 Notes:
 * Get topics from AlgoExpert?
 

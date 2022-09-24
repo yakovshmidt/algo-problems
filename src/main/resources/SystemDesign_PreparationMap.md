@@ -5,6 +5,7 @@
   * [Grokking the Advanced System Design Interview](https://www.educative.io/courses/grokking-adv-system-design-intvw) ?
   * Course on Citi's Udemy - Pragmatic System Design Interview
   * [Grokking System Design Interview](systemDesign/grokkingSystemDesignInterview)
+  * [System design primer](https://github.com/donnemartin/system-design-primer)
 * Theory Topics:
   * Step-by-step guide +
     * +[Estimation practice tutorial_1](https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477)
@@ -14,6 +15,7 @@
   * Caching +
     * Google Guava as a local cache
     * Redis
+    * Memcached
   * [CDN](https://blog.tryexponent.com/cdns-content-delivery-networks/)
     * Amazon CloudFront
     * 
@@ -83,3 +85,11 @@ Notes:
   * Amazon S3 
 * to store metadata we need to use key-value storage or column-oriented storage
   * mongoDB
+
+#Scalability
+###Vertical scaling
+###Horizontal scaling
+###Caching
+###Load balancing
+###Database replication
+###Database partitioning
