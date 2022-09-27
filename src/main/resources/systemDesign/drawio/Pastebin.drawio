@@ -1,26 +1,47 @@
-<mxfile host="app.diagrams.net" modified="2022-09-27T04:00:26.897Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15" etag="BFJsSf-oyUBW7TliG_wp" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-27T04:27:20.516Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15" etag="zx1L5CiI_agqRENENTfx" version="20.3.6" type="github">
   <diagram id="PuMi0kId-e-hUfrw8BZP" name="Страница 1">
-    <mxGraphModel dx="2012" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1532" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="pfe3GB8zZH_nZLxF0a3G-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Pastebin&lt;/font&gt;&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-185" y="5" width="110" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pfe3GB8zZH_nZLxF0a3G-2" target="qygxZFsqdgiUwYKes5Kv-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="pfe3GB8zZH_nZLxF0a3G-2" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Functional requirements:&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* user should add text&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* after paste user should get the link to previously added paste&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* tags on paste&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* user can choose his own link to paste&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* paste should have expiration date user choses&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* create user (out of scope)&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* login (out of scope)&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* relations between user and paste&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* metrics&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=default;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="-570" y="400" width="410" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pfe3GB8zZH_nZLxF0a3G-3" target="qygxZFsqdgiUwYKes5Kv-2">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pfe3GB8zZH_nZLxF0a3G-3" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Non functional requirements:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* high availability to get pastes&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* eventual consistency&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=default;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="-90" y="420" width="220" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.729;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qygxZFsqdgiUwYKes5Kv-1" target="pfe3GB8zZH_nZLxF0a3G-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qygxZFsqdgiUwYKes5Kv-1" target="pfe3GB8zZH_nZLxF0a3G-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="qygxZFsqdgiUwYKes5Kv-1" value="&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Use cases:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* user opens link and pastes some text, clicks Save button and gets a link&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; * link is randomly generated or written by the user&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; * link has an expiration date or can be &lt;/span&gt;chosen by the user&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;* user opens generated link and see previously added data&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;* user can be anonymous&lt;/span&gt; &lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;* service tracks some metrics:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; * count of visits per month&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;* service deletes expired links&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;* service has high availability&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;b&gt;Out of scope:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;* user login and registration&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;* user can edit document&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;* user can set visibility&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;* user can set custom shortlink&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=default;shadow=0;sketch=0;rounded=0;glass=0;gradientColor=none;fillStyle=auto;" parent="1" vertex="1">
           <mxGeometry x="-310" y="50" width="410" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qygxZFsqdgiUwYKes5Kv-2" target="qygxZFsqdgiUwYKes5Kv-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qygxZFsqdgiUwYKes5Kv-2" target="MaZiv5EfzWluJ8ZrnVki-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qygxZFsqdgiUwYKes5Kv-2" target="MaZiv5EfzWluJ8ZrnVki-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qygxZFsqdgiUwYKes5Kv-2" value="&lt;b&gt;Constrains and assumptions&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* how many users the system has? - 10M users&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* how many reads the system has? - 10M paste writes per month&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* how many writes the system has? - 100M paste reads per month&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* read:write radio? - 10:1&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;* what is the type of pastes? - there is only text pastes&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=default;" parent="1" vertex="1">
           <mxGeometry x="-330" y="690" width="380" height="110" as="geometry" />
         </mxCell>
         <mxCell id="qygxZFsqdgiUwYKes5Kv-18" value="Traffic" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;rounded=0;shadow=0;glass=0;sketch=0;fillStyle=auto;strokeColor=default;fillColor=default;gradientColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-820" y="870" width="336" height="230.00000000000045" as="geometry" />
+          <mxGeometry x="-820" y="870" width="336" height="230" as="geometry" />
         </mxCell>
         <mxCell id="qygxZFsqdgiUwYKes5Kv-23" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;glass=0;sketch=0;fillStyle=auto;strokeColor=default;" parent="qygxZFsqdgiUwYKes5Kv-18" vertex="1">
           <mxGeometry y="30" width="336" height="40" as="geometry" />
@@ -118,71 +139,86 @@
         <mxCell id="MaZiv5EfzWluJ8ZrnVki-3" value="&lt;b&gt;Bandwidth&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;writes:&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	* 1.2Kb * 4 -&amp;gt; 5Kb per sec&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	* x10 -&amp;gt; 50Kb/sec&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;reads:&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	* 1.2Kb * 38 -&amp;gt; 45Kb per sec&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	* x10 -&amp;gt; 0.5Mb/sec&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="40" y="870" width="200" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-4" value="&lt;b&gt;High level design&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-283" y="1220" width="120" height="30" as="geometry" />
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-34" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-590" y="1220" width="680" height="549" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-5" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="-590" y="1390" width="30" height="60" as="geometry" />
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-26" value="&lt;b&gt;Design Core Components&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-34">
+          <mxGeometry x="250" y="499" width="170" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-36" value="" style="group" vertex="1" connectable="0" parent="MaZiv5EfzWluJ8ZrnVki-34">
+          <mxGeometry width="680" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-4" value="&lt;b&gt;High level design&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
+          <mxGeometry x="307" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-5" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
+          <mxGeometry y="170" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
           <mxGeometry x="-0.0526" relative="1" as="geometry">
-            <mxPoint x="-560" y="1420" as="sourcePoint" />
-            <mxPoint x="-420" y="1420" as="targetPoint" />
+            <mxPoint x="30" y="200" as="sourcePoint" />
+            <mxPoint x="170" y="200" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MaZiv5EfzWluJ8ZrnVki-8" target="MaZiv5EfzWluJ8ZrnVki-14">
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-8" value="web server" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
+          <mxGeometry x="170" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-14" value="write API" style="whiteSpace=wrap;html=1;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
+          <mxGeometry x="297" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="MaZiv5EfzWluJ8ZrnVki-36" source="MaZiv5EfzWluJ8ZrnVki-8" target="MaZiv5EfzWluJ8ZrnVki-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MaZiv5EfzWluJ8ZrnVki-8" target="MaZiv5EfzWluJ8ZrnVki-16">
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-16" value="read API" style="whiteSpace=wrap;html=1;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
+          <mxGeometry x="297" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="MaZiv5EfzWluJ8ZrnVki-36" source="MaZiv5EfzWluJ8ZrnVki-8" target="MaZiv5EfzWluJ8ZrnVki-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-8" value="web server" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-420" y="1380" width="80" height="80" as="geometry" />
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-18" value="analytics app" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
+          <mxGeometry x="297" y="410" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MaZiv5EfzWluJ8ZrnVki-14" target="MaZiv5EfzWluJ8ZrnVki-20">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-19" value="SQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
+          <mxGeometry x="540" y="110" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MaZiv5EfzWluJ8ZrnVki-14" target="MaZiv5EfzWluJ8ZrnVki-19">
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="MaZiv5EfzWluJ8ZrnVki-36" source="MaZiv5EfzWluJ8ZrnVki-14" target="MaZiv5EfzWluJ8ZrnVki-19">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-111" y="1330" />
-              <mxPoint x="-111" y="1370" />
+              <mxPoint x="479" y="110" />
+              <mxPoint x="479" y="150" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-14" value="write API" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-293" y="1270" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MaZiv5EfzWluJ8ZrnVki-16" target="MaZiv5EfzWluJ8ZrnVki-20">
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.145;entryY=1;entryDx=0;entryDy=-4.35;entryPerimeter=0;" edge="1" parent="MaZiv5EfzWluJ8ZrnVki-36" source="MaZiv5EfzWluJ8ZrnVki-16" target="MaZiv5EfzWluJ8ZrnVki-19">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint y="1540" />
-              <mxPoint y="1540" />
+              <mxPoint x="549" y="290" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.145;entryY=1;entryDx=0;entryDy=-4.35;entryPerimeter=0;" edge="1" parent="1" source="MaZiv5EfzWluJ8ZrnVki-16" target="MaZiv5EfzWluJ8ZrnVki-19">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-41" y="1510" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-16" value="read API" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-293" y="1510" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MaZiv5EfzWluJ8ZrnVki-18" target="MaZiv5EfzWluJ8ZrnVki-19">
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="MaZiv5EfzWluJ8ZrnVki-36" source="MaZiv5EfzWluJ8ZrnVki-18" target="MaZiv5EfzWluJ8ZrnVki-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-18" value="analytics app" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-293" y="1630" width="120" height="60" as="geometry" />
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-20" value="object storage" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
+          <mxGeometry x="620" y="260" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-19" value="SQL?" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="1330" width="60" height="80" as="geometry" />
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="MaZiv5EfzWluJ8ZrnVki-36" source="MaZiv5EfzWluJ8ZrnVki-14" target="MaZiv5EfzWluJ8ZrnVki-20">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MaZiv5EfzWluJ8ZrnVki-20" value="object storage" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="30" y="1480" width="60" height="80" as="geometry" />
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="MaZiv5EfzWluJ8ZrnVki-36" source="MaZiv5EfzWluJ8ZrnVki-16" target="MaZiv5EfzWluJ8ZrnVki-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="320" />
+              <mxPoint x="590" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-61" value="reverse proxy" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="MaZiv5EfzWluJ8ZrnVki-36">
+          <mxGeometry x="160" y="230" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MaZiv5EfzWluJ8ZrnVki-60" value="&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;Q: what the type of database are we going to use?&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;1. relational&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	* paste model has limited amount of columns&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	* paste model has relation with user&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	* user will get full row of paste record&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;2. document oriented&lt;/div&gt;&lt;div style=&quot;text-indent: 0px; text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	* there is no need to use unstructured&lt;/span&gt;&amp;nbsp;model&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;3. column oriented&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;4. graph&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;5. key-value stores&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-720" y="1750" width="290" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
