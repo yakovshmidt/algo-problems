@@ -50,3 +50,4 @@
 | 1      | [4sum](https://leetcode.com/problems/4sum/)                                                                             | 19.09.2022 | TODO                | false    | -    |
 | 1      | [median-of-two-sorted-arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                               | 19.09.2022 | TODO                | false    | -    |
 | 1      | [regular-expression-matching](https://https://leetcode.com/problems/regular-expression-matching/)                       | 22.09.2022 | TODO                | false    | -    |
+| 1      | [find-duplicate-subtrees](https://leetcode.com/problems/find-duplicate-subtrees/)                                       | 27.09.2022 | TODO                | false    | -    |

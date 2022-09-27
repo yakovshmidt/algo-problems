@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class RomanToIntegerReverseTest   {
+public class RomanToIntegerReverseTest {
 
     @Test
     public void testRomanToInt() {
