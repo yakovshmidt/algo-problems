@@ -1,0 +1,15 @@
+There N runners and M reports. report i says that runner A beats runner B. Return the order of runners and how they finished
+There can be test cases like this: a->b, b->a
+
+Example 1:
+A->B
+B->C
+A->C
+C->D
+E->D
+Result: A,B,C,E,D
+
+Example 2:
+a->b
+b->a
+Result: Impossible

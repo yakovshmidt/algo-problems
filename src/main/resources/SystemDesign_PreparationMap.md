@@ -12,6 +12,8 @@
     * +[Estimation practice tutorial_2](https://www.codementor.io/@robinpalotai/back-of-the-envelope-calculation-for-system-design-interviews-z4ljbsp5l)
   * [Proxies](systemDesign/Proxies.md) +
   * [Load Balancing](systemDesign/LoadBalancing.md) +
+    * Amazon's ELB (highly available)
+    * HAProxy
   * Caching +
     * Google Guava as a local cache
     * Redis
@@ -74,6 +76,7 @@ Notes:
 * Get topics from AlgoExpert?
 
 Notes:
+* more than 5T in year 1? - you !might! need NoSQL
 * server can process 5K inserts per **shard**
 * server can process 10K gets per **replica**
 * modern day server can have 256GB memory of RAM to store **cache**
