@@ -1,4 +1,18 @@
-**October 2022:** 
+##December 2022:
+
+**Done without help**
+
+**Done with help:**
+1. [31. Next Permutation](https://leetcode.com/problems/next-permutation/description/): algorithm is complex. Please, pay attention.
+
+**Done by myself but need attention:**
+
+**Need to be done:**
+
+**To do next:**
+
+
+##October 2022: 
 **Done without help** 
 * [unique-email-addresses *google](https://leetcode.com/problems/unique-email-addresses/)
 * [license-key-formatting *google](https://leetcode.com/problems/license-key-formatting/)
