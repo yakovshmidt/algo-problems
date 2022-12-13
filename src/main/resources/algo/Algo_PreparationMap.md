@@ -1,4 +1,46 @@
 # Algo
+
+## Study guide
+1) remember process when you are getting stuck, process of how to solve problems and what to do https://leetcode.com/explore/interview/card/coding-interview-strategy/208/preparation/
+2) remember all data structures like:
+   1) Arrays and strings
+   2) Linked lists
+   3) Hashmaps and sets
+   4) Stacks and queues
+   5) Trees and graphs
+   6) Heaps
+   7) Greedy algorithms
+   8) Binary search
+   9) Backtracking
+   10) Dynamic programming
+   11) Math
+   12) Sorting
+   13) Greedy
+   14) DFS and BFS
+   15) Matrix
+3) 
+4) List of patterns 
+   1) Sliding Window 
+   2) Islands (Matrix Traversal)
+   3) Two Pointers 
+   4) Fast & Slow Pointers 
+   5) Merge Intervals 
+   6) Cyclic Sort 
+   7) In-place Reversal of a LinkedList 
+   8) Tree Breadth-First Search 
+   9) Tree Depth First Search 
+   10) Two Heaps 
+   11) Subsets 
+   12) Modified Binary Search 
+   13) Bitwise XOR 
+   14) Top ‘K’ Elements 
+   15) K-way Merge 
+   16) Topological Sort 
+   17) 0/1 Knapsack 
+   18) Fibonacci Numbers 
+   19) Palindromic Subsequence 
+   20) Longest Common Substring
+
 * B-Tree vs B-Tree+ vs Binary Tree
 * +Selected sort -> Time - O(N^2)
 * Kadane's algo
@@ -12,27 +54,6 @@
 * Repeat presentation of character english letters to integers
 * https://leetcode.com/explore/interview/card/coding-interview-strategy/206/chapter-1-the-interview-process/
 
-## List of patterns
-* Sliding Window
-* Islands (Matrix Traversal)
-* Two Pointers
-* Fast & Slow Pointers
-* Merge Intervals
-* Cyclic Sort
-* In-place Reversal of a LinkedList
-* Tree Breadth-First Search
-* Tree Depth First Search
-* Two Heaps
-* Subsets
-* Modified Binary Search
-* Bitwise XOR
-* Top ‘K’ Elements
-* K-way Merge
-* Topological Sort
-* 0/1 Knapsack
-* Fibonacci Numbers
-* Palindromic Subsequence
-* Longest Common Substring
 
 | Week № | Question                                                                                                                | date       | comment             | resolved | date |
 |--------|-------------------------------------------------------------------------------------------------------------------------|------------|---------------------|----------|------|
