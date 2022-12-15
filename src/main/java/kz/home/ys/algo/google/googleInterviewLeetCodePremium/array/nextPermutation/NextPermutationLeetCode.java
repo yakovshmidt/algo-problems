@@ -1,4 +1,4 @@
-package kz.home.ys.algo.google.array;
+package kz.home.ys.algo.google.googleInterviewLeetCodePremium.array.nextPermutation;
 
 public class NextPermutationLeetCode {
 
