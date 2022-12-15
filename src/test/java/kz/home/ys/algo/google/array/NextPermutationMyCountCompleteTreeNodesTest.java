@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class NextPermutationMySolutionTest {
+public class NextPermutationMyCountCompleteTreeNodesTest {
 
     @Test
     public void testNextPermutation1() {
