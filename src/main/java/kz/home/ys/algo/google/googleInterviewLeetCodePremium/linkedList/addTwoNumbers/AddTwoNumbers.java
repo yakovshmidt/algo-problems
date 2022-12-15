@@ -2,8 +2,8 @@ package kz.home.ys.algo.google.googleInterviewLeetCodePremium.linkedList.addTwoN
 
 public class AddTwoNumbers {
 
-    // time - O(N + M)
-    // space - O(N + M)
+    // time - O(Max(N, M))
+    // space - O(Max(N, M) + 1)
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         /*
 
