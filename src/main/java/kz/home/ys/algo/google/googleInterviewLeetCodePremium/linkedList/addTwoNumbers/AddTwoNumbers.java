@@ -11,7 +11,7 @@ public class AddTwoNumbers {
         2) get first node from l1 and l2, add them, save carry if needed
 
         time - O(N) - where N is longest linked list
-        space - O(N + 1) - where N is longest linked list
+        space - O(N + 1) - where N is the longest linked list
 
         */
 
