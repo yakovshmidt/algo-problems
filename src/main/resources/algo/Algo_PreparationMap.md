@@ -20,16 +20,16 @@
    15) Matrix
 3) 
 4) List of patterns 
-   1) Sliding Window 
-   2) Islands (Matrix Traversal)
-   3) Two Pointers 
-   4) Fast & Slow Pointers 
+   1) Sliding Window +
+   2) Islands (Matrix Traversal) +
+   3) Two Pointers +
+   4) Fast & Slow Pointers + 
    5) Merge Intervals 
    6) Cyclic Sort 
    7) In-place Reversal of a LinkedList 
    8) Tree Breadth-First Search 
    9) Tree Depth First Search 
-   10) Two Heaps 
+   10) Two Heaps +
    11) Subsets 
    12) Modified Binary Search 
    13) Bitwise XOR 
@@ -40,6 +40,18 @@
    18) Fibonacci Numbers 
    19) Palindromic Subsequence 
    20) Longest Common Substring
+
+Array Prefix Sum, Range Sum, Two pointers, Is Palindrome, Sliding Window
+• Binary Search
+• Kadane’s algorithm
+• Longest Increasing Subsequence
+• Recursion, Fibonacci
+• BFS, DFS
+• Dijkstra
+• Topological Sort
+• Merge Sort, Quick Sort
+• Inorder, Preorder, Postorder Tree Traversals
+• Union Find
 
 * B-Tree vs B-Tree+ vs Binary Tree
 * +Selected sort -> Time - O(N^2)
