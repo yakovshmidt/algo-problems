@@ -1,4 +1,4 @@
-package kz.home.ys.algo.medium.PacificAtlanticWaterFlow;
+package kz.home.ys.algo.medium.pacificAtlanticWaterFlow;
 
 import org.junit.Test;
 
