@@ -1,5 +1,17 @@
 # Algo
 
+## 21.12.2022 - 01.06.2023
+
+###Total amount of solved questions: 4
+
+###21.12.2022
+* **Done with help**
+  * Rotate image - https://leetcode.com/problems/rotate-image/
+* **Done without help**
+  * Three sum - https://leetcode.com/problems/3sum/
+  * Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
+  * Copy List with Random Pointer - https://leetcode.com/problems/copy-list-with-random-pointer/
+
 ## Study guide
 1) remember process when you are getting stuck, process of how to solve problems and what to do https://leetcode.com/explore/interview/card/coding-interview-strategy/208/preparation/
 2) remember all data structures like:
