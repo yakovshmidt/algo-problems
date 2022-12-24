@@ -1,4 +1,4 @@
-package kz.home.ys.algo.google.googleInterviewLeetCodePremium.array.threeSum;
+package kz.home.ys.algo.google.googleInterviewLeetCodePremium.arraysAndStrings.threeSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

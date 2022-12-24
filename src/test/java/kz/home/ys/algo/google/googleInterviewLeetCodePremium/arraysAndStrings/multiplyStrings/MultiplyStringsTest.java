@@ -1,4 +1,4 @@
-package kz.home.ys.algo.google.googleInterviewLeetCodePremium.array.multiplyStrings;
+package kz.home.ys.algo.google.googleInterviewLeetCodePremium.arraysAndStrings.multiplyStrings;
 
 import org.junit.Test;
 

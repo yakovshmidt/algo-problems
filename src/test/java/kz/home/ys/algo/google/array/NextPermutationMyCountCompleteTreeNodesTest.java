@@ -1,6 +1,6 @@
 package kz.home.ys.algo.google.array;
 
-import kz.home.ys.algo.google.googleInterviewLeetCodePremium.array.nextPermutation.NextPermutationMySolution;
+import kz.home.ys.algo.google.googleInterviewLeetCodePremium.arraysAndStrings.nextPermutation.NextPermutationMySolution;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
