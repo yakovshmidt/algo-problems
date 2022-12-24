@@ -8,7 +8,7 @@
 * **Done without help**
    * Test2 - link
 
-### Total amount of solved questions: 7
+### Total amount of solved questions: 8
 
 ### 21.12.2022
 
@@ -33,6 +33,7 @@
 
 * **Done without help**
    * Word ladder - https://leetcode.com/problems/word-ladder/ (solved using Trie, but the solution on LeetCode uses BFS and Map)
+   * Plus one - https://leetcode.com/problems/plus-one/
 
 ## Study guide
 
