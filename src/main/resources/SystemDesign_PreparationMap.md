@@ -89,6 +89,12 @@ Notes:
 * to store metadata we need to use key-value storage or column-oriented storage
   * mongoDB
 
+4 types of NoSQL databases:
+* columns
+* key-values
+* documents
+* graphs
+
 #Scalability
 ###Vertical scaling
 ###Horizontal scaling

@@ -3,12 +3,15 @@
 ## 21.12.2022 - 01.06.2023
 
 ### dd.MM.yyyy
-* **Done with help**
-   * Test1 - link
-* **Done without help**
-   * Test2 - link
 
-### Total amount of solved questions: 8
+* **Done with help**
+    * Test1 - link
+* **Not completed on my own**
+    * Test1 - link
+* **Done without help**
+    * Test2 - link
+
+### Total amount of solved questions: 17
 
 ### 21.12.2022
 
@@ -19,7 +22,7 @@
     * Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
     * Copy List with Random Pointer - https://leetcode.com/problems/copy-list-with-random-pointer/
 
-### 23.12.2022
+### 22.12.2022
 
 * **Done without help**
     * Binary tree max path sum - https://leetcode.com/problems/binary-tree-maximum-path-sum/
@@ -32,8 +35,49 @@
 ### 24.12.2022
 
 * **Done without help**
-   * Word ladder - https://leetcode.com/problems/word-ladder/ (solved using Trie, but the solution on LeetCode uses BFS and Map)
-   * Plus one - https://leetcode.com/problems/plus-one/
+    * Word ladder - https://leetcode.com/problems/word-ladder/ (solved using Trie, but the solution on LeetCode uses BFS
+      and Map)
+    * Plus one - https://leetcode.com/problems/plus-one/
+
+### 25.12.2022
+
+* **Done with help**
+    * Maximum subarray (brute force is ok, kadane's has been done with help)
+        - https://leetcode.com/problems/maximum-subarray/
+* **Done without help**
+    * Longest palindromic substring - https://leetcode.com/problems/longest-palindromic-substring/
+
+### 26.12.2022
+
+* **Done with help**
+    * Trapping rain water - https://leetcode.com/problems/trapping-rain-water/
+
+### 27.12.2022
+
+* **Done with help**
+    * Insert Delete GetRandom O(1) - https://leetcode.com/problems/insert-delete-getrandom-o1/
+* **Not completed on my own**
+    * Race care (BFS solved with help, but DP not solved yet) - https://leetcode.com/problems/race-car/
+
+### 28.12.2022
+
+* **Done without help**
+    * Meeting rooms - https://leetcode.com/problems/meeting-rooms/
+* **Not completed on my own**
+    * Meeting rooms II - https://leetcode.com/problems/meeting-rooms-ii/
+
+### 29.12.2022
+
+* **Done without help**
+    * Logger rate limiter - https://leetcode.com/problems/logger-rate-limiter/
+* **Not completed on my own**
+    * Decode strings - https://leetcode.com/problems/decode-string/
+
+### 30.12.2022
+
+* **Not completed on my own**
+    * My calendar I - https://leetcode.com/problems/my-calendar-i/
+    * Random pick with weight - https://leetcode.com/problems/random-pick-with-weight/
 
 ## Study guide
 

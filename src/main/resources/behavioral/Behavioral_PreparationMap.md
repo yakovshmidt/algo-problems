@@ -1,5 +1,19 @@
 # Behavioral
 
+https://www.themartec.com/insidelook/behavioral-interview-questions
+
+Most behavioral questions can be separated into 5 groups:
+
+###Problem solving
+
+**Question:** Give me an example of when you used logic to solve a problem?
+**Answer:**
+
+###Working on a team
+###Biggest failures
+###Leadership
+###Personal stress
+
 ## Study guide
 1) remember process how to answer questions by STAR and so on https://leetcode.com/explore/interview/card/coding-interview-strategy/208/preparation/
 2) https://leetcode.com/explore/interview/card/leapai/ or https://www.educative.io/courses/grokking-the-behavioral-interview/

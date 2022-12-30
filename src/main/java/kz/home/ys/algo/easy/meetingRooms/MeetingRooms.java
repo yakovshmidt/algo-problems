@@ -1,7 +1,5 @@
 package kz.home.ys.algo.easy.meetingRooms;
 
-
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
