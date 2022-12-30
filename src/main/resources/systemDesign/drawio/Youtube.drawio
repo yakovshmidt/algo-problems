@@ -1,1 +1,39 @@
-<mxfile host="app.diagrams.net" modified="2022-12-21T16:49:41.938Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15" version="20.7.4" etag="G4YFpVNLfhYTLy0LrXn_" type="github"><diagram id="J_5dM3YIAkk2X25bHwYv">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-24T08:50:02.316Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15" version="20.7.4" etag="YQpbYgb-MIjtDe7__Jft" type="github">
+  <diagram id="duX4f__IRwekyWoJ6cOV" name="Страница 1">
+    <mxGraphModel dx="1434" dy="1973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="paHPNvhWq5Ldb1nJdfJZ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="paHPNvhWq5Ldb1nJdfJZ-1" target="paHPNvhWq5Ldb1nJdfJZ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="50" />
+              <mxPoint x="216" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="paHPNvhWq5Ldb1nJdfJZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="paHPNvhWq5Ldb1nJdfJZ-1" target="paHPNvhWq5Ldb1nJdfJZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="paHPNvhWq5Ldb1nJdfJZ-1" value="YouTube" style="text;html=1;strokeColor=#A50040;fillColor=#d80073;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-30" width="104" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="paHPNvhWq5Ldb1nJdfJZ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="paHPNvhWq5Ldb1nJdfJZ-2" target="paHPNvhWq5Ldb1nJdfJZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="paHPNvhWq5Ldb1nJdfJZ-2" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Functional Requirements:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#669c35&quot;&gt;1) Watch videos&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#669c35&quot;&gt;2) Upload videos&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;3) Recommendations&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;4) Likes/dislikes&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;5) Users&amp;nbsp;&lt;/div&gt;" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="82" y="80" width="268" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="paHPNvhWq5Ldb1nJdfJZ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="paHPNvhWq5Ldb1nJdfJZ-3" target="paHPNvhWq5Ldb1nJdfJZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="paHPNvhWq5Ldb1nJdfJZ-3" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Nonfunctional Requirements:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;caret-color: rgb(102, 156, 53);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;caret-color: rgb(102, 156, 53);&quot;&gt;1) High&amp;nbsp;availability - 1B DAU&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;caret-color: rgb(102, 156, 53);&quot;&gt;2) Eventual consistency&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;caret-color: rgb(102, 156, 53);&quot;&gt;3) Reliability&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="454" y="80" width="268" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="paHPNvhWq5Ldb1nJdfJZ-4" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Capacity estimations and constraints&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1) 1B DAU&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2) Ratio 100 reads : 1 write -&amp;gt; 5B:50M&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;3) 5 videos per user/day&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;5 videos per user * 1B -&amp;gt; 5B videos per day&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;5B writes : 50M reads&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="120" y="310" width="630" height="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
