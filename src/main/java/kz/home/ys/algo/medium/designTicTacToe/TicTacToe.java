@@ -2,64 +2,32 @@ package kz.home.ys.algo.medium.designTicTacToe;
 
 class TicTacToe {
 
-    private final int[][] matrix;
+    private int[] horizontal;
+    private int[] vertical;
+    private int diagonal;
+    private int reverseDiagonal;
+    private int n;
 
     public TicTacToe(int n) {
-        matrix = new int[n][n];
+        this.n = n;
+        horizontal = new int[n];
+        vertical = new int[n];
+        diagonal = 0;
+        reverseDiagonal = 0;
     }
-
-    // time - O(N^2)
-    // space - O(N^2)
+    
+    // time - O(1)
+    // space - O(N)
     public int move(int row, int col, int player) {
-        matrix[row][col] = player;
+        int currentMovement = (player == 1) ? 1 : -1;
+        horizontal[row] += currentMovement;
+        vertical[col] += currentMovement;
+        if (row == col) diagonal += currentMovement;
+        if (row + col + 1 == n) reverseDiagonal += currentMovement;
+        
+        if (Math.abs(horizontal[row]) == n || Math.abs(vertical[col]) == n || Math.abs(diagonal) == n || Math.abs(reverseDiagonal) == n) return player;
 
-        boolean wonByHorizontal = checkHorizontal(row, player);
-        boolean wonByVertical = checkVertical(col, player);
-        boolean wonByDiagonal = checkDiagonal(row, col, player);
-
-        return (wonByHorizontal || wonByVertical || wonByDiagonal) ? player : 0;
-    }
-
-    private boolean checkHorizontal(int row, int player) {
-        for (int i = 0; i < matrix.length; i++) {
-            if (player != matrix[row][i]) return false;
-        }
-        return true;
-    }
-
-    private boolean checkVertical(int col, int player) {
-        for (int[] ints : matrix) {
-            if (player != ints[col]) return false;
-        }
-        return true;
-    }
-
-    private boolean checkDiagonal(int row, int col, int player) {
-        if (row == col || Math.abs(row + col) == matrix.length) {
-            boolean isWon = false;
-            for (int i = 0; i < matrix.length; i++) {
-                if (player == matrix[i][i]) {
-                    isWon = true;
-                } else {
-                    isWon = false;
-                    break;
-                }
-            }
-            if (isWon) return true;
-
-            for (int i = matrix.length - 1; i >= 0; i--) {
-                if (player == matrix[matrix.length - 1 - i][i]) {
-                    isWon = true;
-                } else {
-                    isWon = false;
-                    break;
-                }
-            }
-
-            return isWon;
-        } else {
-            return false;
-        }
+        return 0;
     }
 }
 

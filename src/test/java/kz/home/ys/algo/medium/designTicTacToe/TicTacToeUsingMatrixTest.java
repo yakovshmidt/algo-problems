@@ -4,11 +4,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TicTacToeTest {
+public class TicTacToeUsingMatrixTest {
 
     @Test
     public void testMove() {
-        TicTacToe ticTacToeUsingMatrix = new TicTacToe(3);
+        TicTacToeUsingMatrix ticTacToeUsingMatrix = new TicTacToeUsingMatrix(3);
 
         assertEquals(0, ticTacToeUsingMatrix.move(0, 0, 1));
         assertEquals(0, ticTacToeUsingMatrix.move(0, 2, 2));
