@@ -13,6 +13,8 @@ class LargestNumberLeetCode {
         }
     }
 
+    // time - O(N*log(N))
+    // space - O(N)
     public String largestNumber(int[] nums) {
         // Get input integers as strings.
         String[] asStrs = new String[nums.length];
