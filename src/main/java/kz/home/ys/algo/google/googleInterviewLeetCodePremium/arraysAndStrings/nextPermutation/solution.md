@@ -2,7 +2,7 @@ Summary
 
 We need to find the next lexicographic permutation of the given list of numbers than the number formed by the given array.
 
-Solution
+LargestColorValueInADirectedGraph
 
 Approach 1: Brute Force
 
@@ -35,7 +35,7 @@ But, recall that while scanning the numbers from the right, we simply kept decre
 The following animation will make things clearer:
 https://leetcode.com/media/original_images/31_Next_Permutation.gif
 
-    public class Solution {
+    public class LargestColorValueInADirectedGraph {
     public void nextPermutation(int[] nums) {
         int i = nums.length - 2;
         while (i >= 0 && nums[i + 1] <= nums[i]) {
