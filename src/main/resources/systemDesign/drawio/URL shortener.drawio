@@ -1,9 +1,21 @@
-<mxfile host="app.diagrams.net" modified="2023-04-30T06:50:26.069Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15" version="21.2.3" etag="rZcNZy67kSqZ49Fxhjdg" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-30T07:15:32.414Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15" etag="QnXEAymCEo5ZcYOzu_f9" version="21.2.3" type="github">
   <diagram name="Page-1" id="7oC8esP51tHyWvmBuMXx">
-    <mxGraphModel>
+    <mxGraphModel dx="2261" dy="1973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="bqKWf17iVh_gCe3MoGTp-1" value="&lt;b&gt;URL Shortener&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-100" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bqKWf17iVh_gCe3MoGTp-2" value="&lt;b&gt;Functional Requirements:&lt;br&gt;&lt;/b&gt;* User logins into the system? - No, there is a possibility to create short URL without any login&lt;br&gt;* A user sends a request with long URL and gets short URL&lt;br&gt;* URLs should be expired after some time (we put expirationDate into the request body)&lt;br&gt;&amp;nbsp;&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="50" width="520" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bqKWf17iVh_gCe3MoGTp-3" value="&lt;b&gt;Non-functional requirements:&lt;/b&gt;&lt;br&gt;* Low Latency - User should get response as fast possible&lt;br&gt;* Scalable&lt;br&gt;* Availability &amp;gt; Consistency&amp;nbsp;&lt;br&gt;* 3 nines? ~ 8 hours per year&lt;br&gt;* Fault tolerant&lt;br&gt;&lt;br&gt;&lt;br&gt;Constraints:&lt;br&gt;* DAU? - 5M&lt;br&gt;* Users in total? - 100M&lt;br&gt;* How many requests each user make per day?&amp;nbsp;&lt;br&gt;- each user creates 5 short URLs per day - 5M DAU / 5 -&amp;gt; 5M * 5 = 25M requests/day = 25M / 82600 ~ 300 TPS&amp;nbsp;&lt;br&gt;- each user gets 50 short URLs per day -&amp;gt; 5M / 50 - 250M / 82600 ~ 3K &amp;nbsp;&lt;br&gt;* How many years should we store the data? - 5 years -&amp;gt;&amp;nbsp;&lt;br&gt;300 TPS * 60 seconds * 60 minutes * 24 hours * 30 days * 12 months * 5 years -&amp;gt; 22bytes * 45B TPYear -&amp;gt; 22Tb * 45 -&amp;gt; 100TB for 5 years&lt;br&gt;&lt;br&gt;One request will contain:&lt;br&gt;* expiration date - 8 bytes&lt;br&gt;* long url - 8 bytes&lt;br&gt;* short url - 4 bytes&lt;br&gt;* user_id? - 2 bytes?&lt;br&gt;&lt;br&gt;As a result: 22 bytes&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="-20" width="760" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="bqKWf17iVh_gCe3MoGTp-4" value="&lt;b&gt;API (we choose REST)&lt;/b&gt;&lt;br&gt;&lt;br&gt;* POST /shorten&lt;br&gt;&lt;br&gt;requestBody = {&lt;br&gt;&quot;longUrl&quot;, &quot;expiration_date&quot;?, &quot;user_id&quot;?&amp;nbsp;&lt;br&gt;}&lt;br&gt;&lt;br&gt;responseBody: {&lt;br&gt;&quot;short_url&quot;, &quot;expiration_date&quot;&lt;br&gt;}&lt;br&gt;&lt;br&gt;* GET /shorten/{shortUrl}&lt;br&gt;&lt;br&gt;response code will be 301 (permanently) or 302 (temporarily) -&amp;gt; we choose 301 and we will send&lt;br&gt;shorten URL in headers&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="263" width="540" height="240" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
