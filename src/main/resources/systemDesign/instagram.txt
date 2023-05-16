@@ -1,0 +1,67 @@
+Instagram
+
+Functional reqs:
+* uploading images
+* newsfeed generation
+
+Out of scope:
+* likes
+* comments
+* login / registration
+
+Non-functional reqs:
+* low latency
+* reliability
+* availability > consistency
+* scalability
+
+* 1B total users
+* 1M active users daily
+* 100 reads : 1 write
+* 500Kb image size
+* store data for 10 years
+
+Capacity:
+* 1M * 500Kb = 500Gb per day -> 500Gb * 30 days * 12 months * 10 years -> 5Tb * 3600 days -> 20Pb for ten years without redundancy
+* 1M * 1 write/day -> 1M / (24 hours * 3600 seconds) -> 1M / 86400 -> 1M / 10_000 -> 1K / 10 -> 100 RPS (writes)
+* 1M * 100 -> 10_000 RPS (reads)
+
+Data model:
+1) User
+id
+username
+password
+location (latitude, longitude)
+dob
+
+2) Image
+id
+path
+tags
+description
+creation_date
+
+3) Follower
+from_id
+to_id
+
+3) News_Feed
+id
+user_id
+image_id
+
+APIs:
+1) upload an image
+POST /images/upload
+headers: token
+request body: user_id, image_path, tags, description
+
+2) get newsfeed:
+GET /newsfeed/{user_id}?offset={page_number}&limit={page_size}
+headers: token
+
+High level design:
+[Client] --- [LB] --- [Write App Server] --- [SQL Database] --- (image creation event) ----
+                      [Read App Server]      [Object storage (S3)]                         |
+                                                                                           |
+                                                                                [News Feed Server]
