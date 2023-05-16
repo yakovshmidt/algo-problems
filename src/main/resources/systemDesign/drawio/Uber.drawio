@@ -1,26 +1,140 @@
-<mxfile host="app.diagrams.net" modified="2023-04-28T05:00:03.590Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15" etag="P9ALeDrw4BoVk6IkibXj" version="21.2.2" type="github">
-  <diagram name="Page-1" id="7oI3Zf5R3Nd0XWc2zMu_">
-    <mxGraphModel dx="1247" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2023-05-02T03:46:03.991Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15" etag="XtWH8Jwlrful2TsnuQ0H" version="21.2.3" type="github">
+  <diagram name="Page-1" id="Umyos6cTqy8Y_GRD97wS">
+    <mxGraphModel dx="2022" dy="670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="cP32iMzOHFm_Vph5NZdT-1" value="&lt;b&gt;UBER&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="360" y="10" width="60" height="30" as="geometry" />
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-1" value="&lt;b&gt;UBER&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="20" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cP32iMzOHFm_Vph5NZdT-2" value="Functional Requirements&lt;br&gt;0. Matching driver and rider&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;1. Riders click on button and starts seaching &lt;br/&gt;for a nearby drivers&lt;br/&gt;2. Rider sees nearby drivers&lt;br/&gt;3. Driver is able to accept/decline a rider &lt;br/&gt;of nearby passenger&lt;br/&gt;4. When a trip is started, both driver and rider&lt;br/&gt;see current location &lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="30" y="50" width="260" height="140" as="geometry" />
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-2" value="&lt;b&gt;Functional requirements:&lt;br&gt;&lt;/b&gt;* both rider and driver log into the system&lt;br&gt;* rider see nearby drivers&lt;br&gt;* rider click on button and matching is being started for nearby drivers&lt;br&gt;* driver accept/reject a ride&lt;br&gt;* when a rider is started both rider and driver see current location&lt;br&gt;&lt;br&gt;* Matching&lt;br&gt;* send a request by a rider&lt;br&gt;* accept/reject by driver" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="80" width="390" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="cP32iMzOHFm_Vph5NZdT-3" value="&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;Non-Functional Requirements&lt;/div&gt;&lt;div style=&quot;&quot;&gt;1. Highly Available&lt;/div&gt;&lt;div style=&quot;&quot;&gt;2. Low Latency&lt;/div&gt;&lt;div style=&quot;&quot;&gt;3. Highly Consistent&lt;/div&gt;&lt;div style=&quot;&quot;&gt;4. Fault-tolerant&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="350" y="60" width="180" height="80" as="geometry" />
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-3" value="&lt;b&gt;Non functional requirements&lt;/b&gt;&lt;br&gt;* System will be used by mobiles only&amp;nbsp;&lt;br&gt;* Availability - the system should work 24/7/365&amp;nbsp;&lt;br&gt;* Low latency - response time for both riders and drivers should be lower than 200ms&lt;br&gt;* Availability &amp;gt; Consistency - eventual consistency will be chosen&lt;br&gt;* Fault tolerance &lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;br&gt;Riders:&lt;br&gt;* 100M users in total&lt;br&gt;* 10M DAU&amp;nbsp;&lt;br&gt;* each user makes 2 rides daily&amp;nbsp;&lt;br&gt;&lt;br&gt;10M * 2 -&amp;gt; 20M rides a day -&amp;gt; 20M / 86200 -&amp;gt; 20K / 100 -&amp;gt; 2K/10 -&amp;gt; 200 RPS&amp;nbsp;&lt;br&gt;&lt;br&gt;Peak hours = 2X -&amp;gt; 400RPS in peak hours&lt;br&gt;&lt;br&gt;Drivers:&amp;nbsp;&lt;br&gt;* 10M users in total&lt;br&gt;* 1M DAU&lt;br&gt;* Shift is 6 hours&lt;br&gt;* each driver sends current location once in 5 sec&lt;br&gt;&lt;br&gt;1M / 4 -&amp;gt; &amp;nbsp;250K / 86200 -&amp;gt; 250K / 100K -&amp;gt; 2.5 RPS / 5 -&amp;gt; &amp;nbsp;0.5 RPS -&amp;gt; 1 RPS in rush hours" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="305" y="100" width="500" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="cP32iMzOHFm_Vph5NZdT-4" value="&lt;div style=&quot;text-align: left;&quot;&gt;Constraints&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1. 100K active drivers per region&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2. 1M active riders per region&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;3. total amount of users is 10M&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="250" y="210" width="200" height="70" as="geometry" />
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-4" value="&lt;b&gt;API&lt;/b&gt;&lt;br&gt;&lt;br&gt;POST /locations/drivers/{driver_id}&lt;br&gt;request body: {&quot;longitude&quot;, &quot;latitude&quot;}&lt;br&gt;&lt;br&gt;POST /riders/{rider_id}/price&lt;br&gt;request body: {&quot;source&quot;:{&quot;longitude&quot;, &quot;latitude&quot;}, &quot;destination&quot;:{&quot;longitude&quot;, &quot;latitude&quot;}}&lt;br&gt;response: {&quot;price&quot;}&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;POST /riders/{rider_id}/order&lt;br&gt;request body: {&quot;source&quot;:{&quot;longitude&quot;, &quot;latitude&quot;}, &quot;destination&quot;:{&quot;longitude&quot;, &quot;latitude&quot;}, &quot;price&quot;}&lt;br&gt;&lt;br&gt;POST /drivers/{driver_id}/{accept/reject}/{ride_id}&lt;br&gt;&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="460" width="510" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="cP32iMzOHFm_Vph5NZdT-6" value="&lt;div style=&quot;&quot;&gt;Back-of-the envelope calculations&lt;/div&gt;&lt;div style=&quot;&quot;&gt;1. for riders: 1M send request for getting nearby drivers every 5sec =&amp;gt; 1M / 5sec = 200K QPS =&amp;gt; every request consist of ID (8 bytes), longitude and latitude (16 bytes), and other info (64 bytes).&lt;/div&gt;&lt;div style=&quot;&quot;&gt;In peak hours we make our requests X2 =&amp;gt; 400K QPS =&amp;gt; 400K * (8 + 16 + 64) -&amp;gt; 400K * 100bytes -&amp;gt; 40MB/sec&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="20" y="310" width="1050" height="70" as="geometry" />
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-20" value="Rider" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="490" width="140" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="cP32iMzOHFm_Vph5NZdT-7" value="&lt;div style=&quot;&quot;&gt;API (we will use REST)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;1. send locations of a driver&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;	POST /drivers/location&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;	request body:&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;	{ &quot;logitude&quot;, &quot;latitude&quot;, &quot;otherInfo&quot;}&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;2. send location of a rider&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;POST /riders/location&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;request body:&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;	{ &quot;logitude&quot;, &quot;latitude&quot;, &quot;otherInfo&quot;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;3. get nearby drivers for a rider&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;GET /riders/nearby-drivers with pagination&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;4. accept/decline a ride for drivers&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;POST /drivers/rides/{accept/decline}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;5. search for a driver for riders&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;POST /riders/ride&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;request body&amp;nbsp;{location, rider_id, type_of_ride (economy, business, ...)}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="50" y="380" width="390" height="290" as="geometry" />
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-21" value="id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-20">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-22" value="username" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-20">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-23" value="hashed_passpord" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-20">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-24" value="Driver" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="490" width="140" height="150" as="geometry">
+            <mxRectangle x="430" y="500" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-25" value="Id&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-24">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-26" value="Username" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-24">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-27" value="hashed_password" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-24">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-36" value="Car info" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-24">
+          <mxGeometry y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-28" value="Ride" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="680" width="140" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-29" value="id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-28">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-30" value="rider_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-28">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-31" value="driver_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-28">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-39" value="source info&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-28">
+          <mxGeometry y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-40" value="target info" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-28">
+          <mxGeometry y="150" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-41" value="price" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yHd6TG3PewnYxjIQtVdX-28">
+          <mxGeometry y="180" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yHd6TG3PewnYxjIQtVdX-30" target="yHd6TG3PewnYxjIQtVdX-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yHd6TG3PewnYxjIQtVdX-31" target="yHd6TG3PewnYxjIQtVdX-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-42" value="&lt;b&gt;High level design&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-315" y="900" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.05;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yHd6TG3PewnYxjIQtVdX-43" target="yHd6TG3PewnYxjIQtVdX-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-49" value="logins and gets 10 nearby drivers" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yHd6TG3PewnYxjIQtVdX-48">
+          <mxGeometry x="-0.1863" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-43" value="Rider&lt;br&gt;from&amp;nbsp;&lt;br&gt;Mobile&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="970" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yHd6TG3PewnYxjIQtVdX-46" target="yHd6TG3PewnYxjIQtVdX-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-51" value="seaches for nearby drivers" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yHd6TG3PewnYxjIQtVdX-50">
+          <mxGeometry x="-0.2" y="2" relative="1" as="geometry">
+            <mxPoint x="30" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-46" value="App Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-47" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="980" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.05;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yHd6TG3PewnYxjIQtVdX-54" target="yHd6TG3PewnYxjIQtVdX-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-53" value="clicks on button to find an appropriate driver" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yHd6TG3PewnYxjIQtVdX-52">
+          <mxGeometry x="-0.1863" y="2" relative="1" as="geometry">
+            <mxPoint x="24" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-54" value="Rider&lt;br&gt;from&amp;nbsp;&lt;br&gt;Mobile&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="1160" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yHd6TG3PewnYxjIQtVdX-57" target="yHd6TG3PewnYxjIQtVdX-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-62" value="sends request to first driver and waits for 5 sec driver&#39;s response" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yHd6TG3PewnYxjIQtVdX-61">
+          <mxGeometry x="-0.6" y="1" relative="1" as="geometry">
+            <mxPoint x="125" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yHd6TG3PewnYxjIQtVdX-57" target="yHd6TG3PewnYxjIQtVdX-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-64" value="if driver 1 did not respond then send request for matching to another driver&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yHd6TG3PewnYxjIQtVdX-63">
+          <mxGeometry x="0.4076" y="2" relative="1" as="geometry">
+            <mxPoint x="209" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-57" value="App Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-490" y="1340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-59" value="Driver 1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1160" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yHd6TG3PewnYxjIQtVdX-60" value="Driver 2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1180" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
