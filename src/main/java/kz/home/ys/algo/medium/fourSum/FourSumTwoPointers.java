@@ -1,5 +1,6 @@
 package kz.home.ys.algo.medium.fourSum;
 
+import java.nio.file.LinkOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,7 +21,7 @@ class FourSumTwoPointers {
                 int l = j + 1;
                 int r = nums.length - 1;
                 while (l < r) {
-                    int sum = nums[i] + nums[j] + nums[l] + nums[r];
+                    long sum = (long) nums[i] + (long) nums[j] + (long) nums[l] + (long) nums[r];
                     if (sum == target) {
                         result.add(List.of(nums[i], nums[j], nums[l], nums[r]));
                         l++;
