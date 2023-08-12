@@ -3,6 +3,7 @@ package kz.home.ys.algo.helper;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class ArrayTestingHelper {
 
@@ -37,5 +38,15 @@ public class ArrayTestingHelper {
         for (int i = 0; i < expected.size(); i++) {
             assertEquals(expected.get(i), actual.get(i));
         }
+    }
+
+    public static void assertLinkedLists(ListNode expected, ListNode actual) {
+        while (expected != null && actual != null) {
+            assertEquals(expected.val, actual.val);
+            expected = expected.next;
+            actual = actual.next;
+        }
+        assertNull(expected);
+        assertNull(actual);
     }
 }

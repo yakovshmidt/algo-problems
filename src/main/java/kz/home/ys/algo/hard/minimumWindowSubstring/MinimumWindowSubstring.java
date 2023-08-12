@@ -11,7 +11,7 @@ class MinimumWindowSubstring {
             dictT.put(letter, dictT.getOrDefault(letter, 0) + 1);
         }
 
-        int required = t.length();
+        int required = dictT.size();
         int l = 0, r = 0;
         int formed = 0;
         Map<Character, Integer> windowCount = new HashMap<>();
@@ -43,6 +43,6 @@ class MinimumWindowSubstring {
             r++;
         }
 
-        return s.substring(ans[1], ans[2] + 1);
+        return ans[0] == -1 ? "" : s.substring(ans[1], ans[2] + 1);
     }
 }
