@@ -2,6 +2,8 @@ package kz.home.ys.algo.hard.allOne;
 
 import junit.framework.TestCase;
 
+import java.util.PriorityQueue;
+
 public class AllOneTest extends TestCase {
 
     public void testAllOne() {

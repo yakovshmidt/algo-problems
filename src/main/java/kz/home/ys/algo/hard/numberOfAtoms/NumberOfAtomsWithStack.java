@@ -12,26 +12,27 @@ class NumberOfAtomsWithStack {
         Stack<Map<String, Integer>> stack = new Stack<>();
         stack.push(new TreeMap<>());
 
-        for (int i = 0; i < n;) {
-            if (formula.charAt(i) == '(') {
+        int right = 0;
+        while (right < n) {
+            if (formula.charAt(right) == '(') {
                 stack.push(new TreeMap<>());
-                i++;
-            } else if (formula.charAt(i) == ')') {
+                right++;
+            } else if (formula.charAt(right) == ')') {
                 Map<String, Integer> top = stack.pop();
-                int iStart = ++i, multiplicity = 1;
-                while (i < n && Character.isDigit(formula.charAt(i))) i++;
-                if (iStart < i) multiplicity = Integer.parseInt(formula.substring(iStart, i));
+                int left = ++right, multiplicity = 1;
+                while (right < n && Character.isDigit(formula.charAt(right))) right++;
+                if (left < right) multiplicity = Integer.parseInt(formula.substring(left, right));
                 for (String name : top.keySet()) {
                     int count = top.get(name);
                     stack.peek().put(name, stack.peek().getOrDefault(name, 0) + count * multiplicity);
                 }
             } else {
-                int iStart = i++;
-                while (i < n && Character.isLowerCase(formula.charAt(i))) i++;
-                String name = formula.substring(iStart, i);
-                iStart = i;
-                while (i < n && Character.isDigit(formula.charAt(i))) i++;
-                int multiplicity = iStart < i ? Integer.parseInt(formula.substring(iStart, i)) : 1;
+                int left = right++;
+                while (right < n && Character.isLowerCase(formula.charAt(right))) right++;
+                String name = formula.substring(left, right);
+                left = right;
+                while (right < n && Character.isDigit(formula.charAt(right))) right++;
+                int multiplicity = left < right ? Integer.parseInt(formula.substring(left, right)) : 1;
                 stack.peek().put(name, stack.peek().getOrDefault(name, 0) + multiplicity);
             }
         }
