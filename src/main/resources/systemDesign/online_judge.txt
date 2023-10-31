@@ -1,0 +1,70 @@
+Problem: A coding challenge is a competition where a set of coding questions gets released for a period of few
+hours/days and a list of pre-registered competitors participate by solving these questions and submitting the
+solutions which gets run against some hidden test cases and competitors are scored based on the test results.
+A platform hosting such challenges is called an online judge. ex: SPOJ, topcoder etc.
+
+Functional requirements:
+1) User register/log in
+2) Open personal information with previous contests/score and so
+3) User is able to register for upcoming challenges
+4) After competition is being started, user is able to run/submit a solution
+5) User is able to see the results (leaderboard) during the contest
+6) As only contest is finished the results should be recalculated and users will be able to see results.
+
+Not-functional requirements:
+1) Law latency -> running/submitting tests cases should be as low as possible
+2) High Availability
+3) Eventual consistency
+4) Reliability -> any results shouldn't be lost
+5) Scalable
+6) Write heavy -> write > read
+
+Capacity:
+1) 1M users in total
+2) 15K users per competition
+3) 5 competitions a day
+4) 1 submission will be 1Kb of code data
+5) each user makes 10 submits per competition on average
+
+15K * 5 competitions * 10 submits -> 750K RPD -> 750K / (24 * 3600) = 750K / 86400  -> 75 / 86 ~ 1 RPS
+750K RPD * 1Kb
+
+Model:
+1) User
+* id (PK)
+* username
+* hashed_password
+* total_rank
+
+2) Submission
+* id (PK)
+* user_contest_id (FK)
+* rank
+* submission_date
+
+3) Contest
+* id (PK)
+* description
+* start_date
+* end_date
+
+4) User_Contest
+* id (PK)
+* user_id (FK)
+* contest_id (FK)
+
+APIs:
+1) GET /contests/{id}/description
+
+2) POST /contests/{contest_id}/users/{user_id}/submit
+multipart file: code to submit
+
+3) GET /contests/{contest_id}/leaderboard
+
+High-level design:
+
+[Browser] ------- [LB] ------ [Web App]]] ------ [Meta DB]
+                                                 [Object Storage]
+
+#Notes
+1) User communicates to the application via browser

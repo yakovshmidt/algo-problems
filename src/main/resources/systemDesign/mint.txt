@@ -1,0 +1,74 @@
+Mint
+
+Mint.com is a free, web-based personal financial management service,
+that allows its users to integrate with financial accounts to automatically extract their data, and manage their personal budget.
+
+Design a system like Mint.
+
+Functional requirements:
+1) User connect a financial account
+2) Service extracts transactions from the account
+    2.1) Updates daily
+    2.2) Categorized transactions (entertainments, courses, food, etc.)
+3) Monthly spending analyses (Analytics is OOS)
+4) Users are able to manage their personal budget manually
+5) Service should send a notification when user exceeds a budget
+
+Non-functional requirements:
+1) High availability -> users should get their expenses as fast as possible
+2) Eventual consistency -> system must not lose any transaction
+3) Reliability -> if any failure happens, the system should continue working
+4) Low latency -> users should work with the system with low latency
+5) Security -> the system should be secure so that no data should be stolen
+
+Capacity:
+1) How many users the system has? -> 10M
+2) How many accounts per user the system has? -> 3 accounts per user
+3) Should we synchronize all accounts on a daily basis? -> no, only for users who were active past 30 days
+4) How many transactions per months? -> 5B TPM
+5) How many reads per months? -> 500M RPM
+6) read:write ratio -> 1:10 -> write heavy app
+7) How many sellers in total -> 50K
+8) How many categories per user -> 10
+
+* 10M * 3 = 30M accounts in total
+* 5B transactions / 10M users -> 500M / 10M -> 50 transactions per user
+* 5 read requests per user
+
+Model:
+1) User
+    * id
+    * username
+    * password_hashed
+    * last_login_at
+
+2) Seller
+    * id
+    * name
+    * category_id
+
+3) Category
+    * id
+    * type
+
+4) Account
+    * id
+    * user_id
+    * login
+    * password_hashed
+
+5) Transaction
+    * id - 8 bytes
+    * account_id - 8 bytes
+    * amount - 5 bytes
+    * seller? - 32 bytes
+    * created_at - 5 bytes
+    total: 58 bytes ~ 60 bytes
+
+* 5B transactions/month * 60 bytes -> 300B * 1 byte -> 300 * 10^9 * 1 byte = 300 * 1Tb -> 300Gb
+* 300Gb * 60 months (5 years) = 18Gb * 10^4 -> 180TB
+* 5B TPM -> 5B / (30 * 24 * 3600) -> 5B / (24 * 86400) -> 5B / 3 * 10^6 -> 5K / 3 ~ 2K TPS
+* 2K / 10 ~ 200 RPS
+
+High-level design:
+

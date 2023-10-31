@@ -2,8 +2,7 @@ package kz.home.ys.algo.helper;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
 public class ArrayTestingHelper {
 
@@ -56,5 +55,16 @@ public class ArrayTestingHelper {
         }
         assertNull(expected);
         assertNull(actual);
+    }
+
+    public static void assertTrees(TreeNode expected, TreeNode actual) {
+        if (expected != null && actual != null) {
+            assertEquals(expected.val, actual.val);
+            assertTrees(expected.left, actual.left);
+            assertTrees(expected.right, actual.right);
+        } else {
+            assertNull(expected);
+            assertNull(actual);
+        }
     }
 }
