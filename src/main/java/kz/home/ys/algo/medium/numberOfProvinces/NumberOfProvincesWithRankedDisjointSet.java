@@ -1,5 +1,7 @@
 package kz.home.ys.algo.medium.numberOfProvinces;
 
+import java.util.Random;
+
 public class NumberOfProvincesWithRankedDisjointSet {
 
         public int findCircleNum(int[][] isConnected) {

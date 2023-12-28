@@ -13,6 +13,13 @@ public class ArrayTestingHelper {
         }
     }
 
+    public static void assertArrays(String[] expected, String[] actual) {
+        assertEquals(expected.length, actual.length);
+        for (int i = 0; i < expected.length; i++) {
+            assertEquals(expected[i], actual[i]);
+        }
+    }
+
     public static void assertArrays(double[] expected, double[] actual) {
         assertEquals(expected.length, actual.length);
         for (int i = 0; i < expected.length; i++) {
@@ -30,7 +37,17 @@ public class ArrayTestingHelper {
         }
     }
 
-    public static void assertMatrices(List<List<Integer>> expected, List<List<Integer>> actual) {
+    public static void assertMatrices(char[][] expected, char[][] actual) {
+        assertEquals(expected.length, actual.length);
+        assertEquals(expected[0].length, actual[0].length);
+        for (int i = 0; i < expected.length; i++) {
+            for (int j = 0; j < expected[i].length; j++) {
+                assertEquals(expected[i][j], actual[i][j]);
+            }
+        }
+    }
+
+    public static <T> void assertMatrices(List<List<T>> expected, List<List<T>> actual) {
         assertEquals(expected.size(), actual.size());
         assertEquals(expected.get(0).size(), actual.get(0).size());
         for (int i = 0; i < expected.size(); i++) {

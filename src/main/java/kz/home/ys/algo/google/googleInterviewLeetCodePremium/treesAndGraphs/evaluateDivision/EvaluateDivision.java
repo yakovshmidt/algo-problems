@@ -40,7 +40,6 @@ public class EvaluateDivision {
                 for (Map.Entry<String, Double> entry : next.entrySet()) {
                     String key = entry.getKey();
 
-
                     if (!graph.containsKey(key)) {
                         result[i] = -1.0;
                         break;
