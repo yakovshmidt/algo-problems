@@ -74,6 +74,18 @@ public class ArrayTestingHelper {
         assertNull(actual);
     }
 
+    public static void assertBSTs(TreeNode expected, TreeNode actual) {
+        if (expected == null && actual == null) {
+            // do nothing
+        } else {
+            assertNotNull(expected);
+            assertNotNull(actual);
+            assertEquals(expected.val, actual.val);
+            assertBSTs(expected.left, actual.left);
+            assertBSTs(expected.right, actual.right);
+        }
+    }
+
     public static void assertTrees(TreeNode expected, TreeNode actual) {
         if (expected != null && actual != null) {
             assertEquals(expected.val, actual.val);
