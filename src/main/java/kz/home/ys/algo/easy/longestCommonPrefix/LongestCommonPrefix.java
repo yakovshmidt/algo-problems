@@ -28,7 +28,6 @@ class LongestCommonPrefix {
             trie.add(word);
         }
 
-        int n = strs.length;
         TrieNode trieNode = trie.root;
         StringBuilder sb = new StringBuilder();
         int idx = 0;

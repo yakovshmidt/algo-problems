@@ -32,14 +32,13 @@ public class LargestDivisibleSubset {
                 if (ans.isEmpty()) {
                     ans.add(nums[i]);
                     currLIS--;
-                } else {
-                    if (ans.get(ans.size() - 1) % nums[i] == 0) {
-                        ans.add(nums[i]);
-                        currLIS--;
-                    }
+                } else if (ans.get(ans.size() - 1) % nums[i] == 0) {
+                    ans.add(nums[i]);
+                    currLIS--;
                 }
             }
         }
+
         return ans;
     }
 }

@@ -1,0 +1,29 @@
+Requirements:
+    * to start the game dealer has one card exposed and one closed
+    * a player makes a suggestion revealing as many cards as they want, but it has to be less than 21
+    * dealer reveals closed card and sees that combination is lower than 16 then they are allowed to reveal one more.
+
+Key Objects:
+    * Card
+    * Account
+        * Dealer
+        * Player
+    * Table
+
+Main Use Case
+    * both dealer and player "create hands"
+    * place bet
+    * player plays the hand
+    * dealer plays the hand
+
+Key Business Logic
+    * Card
+        * reveal()
+    * Account
+        * Dealer
+            * createGame() or createHand()
+            * revealClosedCard()
+            * handOneMoreCard()
+            * collect() or payout()
+
+
